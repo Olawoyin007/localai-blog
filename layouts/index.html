@@ -1,0 +1,25 @@
+{{/* The homepage: a short intro, then the newest posts (4 per page), then the pager. */}}
+{{ define "main" }}
+<section class="hero">
+  {{ .Content }}
+  <p class="privacy-note">No trackers, no cookies here.</p>
+</section>
+
+<section class="post-list">
+  {{/* Every post from the three sections, newest first, split into pages of 4. */}}
+  {{ $posts := where .Site.RegularPages "Type" "in" (slice "beginner" "advanced" "wellbeing") }}
+  {{ $paginator := .Paginate $posts }}
+  {{ range $paginator.Pages }}
+  <article class="post-card">
+    <a href="{{ .RelPermalink }}"><h2>{{ .Title }}</h2></a>
+    <div class="meta">
+      <span class="section">{{ .Section | title }}</span>
+      {{ partial "authorship.html" . }}
+      <time>{{ .Date.Format "Jan 2, 2006" }}</time>
+    </div>
+  </article>
+  {{ end }}
+</section>
+
+{{ partial "pager.html" $paginator }}
+{{ end }}

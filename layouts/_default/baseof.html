@@ -1,0 +1,18 @@
+{{/* baseof.html - the shell every page is poured into.
+     The head, top bar, and footer are shared here; each page fills in "main". */}}
+<!DOCTYPE html>
+<html lang="{{ .Site.Language.Lang | default "en" }}">
+<head>{{ partial "head.html" . }}</head>
+<body>
+  {{ partial "header.html" . }}
+
+  <main>{{ block "main" . }}{{ end }}</main>
+
+  {{/* Footer: the mission shows on every page; your name only on the homepage
+       and the About page. RSS is always here. */}}
+  <footer class="site-foot">
+    <p class="foot-mission">Made to help more people run AI on their own hardware.</p>
+    <p class="foot-by">{{ if or .IsHome (eq .RelPermalink "/about/") }}<a href="/about/">{{ .Site.Params.author | default "..." }}</a> &middot; {{ end }}<a href="/index.xml">RSS</a></p>
+  </footer>
+</body>
+</html>

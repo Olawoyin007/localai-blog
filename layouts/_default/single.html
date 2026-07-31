@@ -1,0 +1,14 @@
+{{/* One post: title, the meta row (section . sticker . date), your words,
+     then the "Ingredients" footnote. */}}
+{{ define "main" }}
+<article class="post">
+  <h1>{{ .Title }}</h1>
+  <div class="meta">
+    {{ with .Section }}<span class="section">{{ . | title }}</span>{{ end }}
+    {{ partial "authorship.html" . }}
+    {{ if not .Date.IsZero }}<time>{{ .Date.Format "Jan 2, 2006" }}</time>{{ end }}
+  </div>
+  {{ .Content }}
+  {{ partial "disclaimer.html" . }}
+</article>
+{{ end }}

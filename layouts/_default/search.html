@@ -1,0 +1,44 @@
+{{ define "main" }}
+<section class="hero">
+  <h1>Search</h1>
+  <input id="q" type="search" placeholder="Search posts..." autofocus autocomplete="off" aria-label="Search posts">
+</section>
+<section id="results" class="post-list" aria-live="polite"></section>
+<script>
+// Tiny client-side search. Reads the site's index.json once, filters in the browser.
+// No library, no server - it works from the static files alone.
+const INDEX = {{ "index.json" | relURL }};
+const LABELS = {organic: "Organic", "human-ai": "Human + AI"};
+const q = document.getElementById('q');
+const out = document.getElementById('results');
+let data = [];
+fetch(INDEX).then(r => r.json()).then(d => { data = d; if (q.value) run(); });
+
+function esc(s) {
+  return String(s).replace(/[&<>"']/g, c =>
+    ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+}
+
+function run() {
+  const query = q.value.trim().toLowerCase();
+  if (!query) { out.innerHTML = ''; return; }
+  const terms = query.split(/\s+/);
+  const hits = data.filter(p => {
+    const hay = (p.title + ' ' + p.content).toLowerCase();
+    return terms.every(t => hay.includes(t));
+  }).slice(0, 30);
+  if (!hits.length) {
+    out.innerHTML = '<p class="muted">No matches for &ldquo;' + esc(query) + '&rdquo;.</p>';
+    return;
+  }
+  out.innerHTML = hits.map(p => {
+    const pill = p.authorship
+      ? '<span class="pill pill--' + p.authorship + '">' + (LABELS[p.authorship] || esc(p.authorship)) + '</span>'
+      : '';
+    return '<article class="post-card"><a href="' + p.url + '"><h2>' + esc(p.title) + '</h2></a>' +
+      '<div class="meta"><span class="section">' + esc(p.section) + '</span>' + pill + '</div></article>';
+  }).join('');
+}
+q.addEventListener('input', run);
+</script>
+{{ end }}

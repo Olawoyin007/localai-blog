@@ -1,0 +1,8 @@
+{{/* The "Ingredients" footnote at the foot of a post, from its `authorship` field. */}}
+{{- with .Params.authorship -}}
+  {{- $notes := dict
+      "organic"  "Ingredients: 100% human."
+      "human-ai" "Ingredients: human + AI."
+  -}}
+  {{- with index $notes . -}}<p class="post-disclaimer">{{ . }}</p>{{- end -}}
+{{- end -}}

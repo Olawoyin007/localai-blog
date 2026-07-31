@@ -1,0 +1,24 @@
+{{/* Everything inside <head>: title, description, link-preview tags, icon, styles.
+     You should never need to touch this just to write a post. */}}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+{{/* Browser-tab title: just the site name on the homepage, "Post . Site" elsewhere. */}}
+<title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}</title>
+
+{{/* Description: the page's own `description` if it has one, else the first lines of
+     the post, else the site description from hugo.toml. */}}
+{{ $desc := .Description }}
+{{ if not $desc }}{{ if .IsPage }}{{ $desc = .Summary | plainify | chomp }}{{ else }}{{ $desc = .Site.Params.description }}{{ end }}{{ end }}
+{{ with $desc }}<meta name="description" content="{{ . }}">{{ end }}
+
+{{/* Link-preview tags: how a shared link looks on LinkedIn, X, or a chat app. */}}
+<meta property="og:title" content="{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }}{{ end }}">
+{{ with $desc }}<meta property="og:description" content="{{ . }}">{{ end }}
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+<meta name="twitter:card" content="summary">
+
+<link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">

@@ -1,0 +1,13 @@
+{{/* Numbered pagination (arrows + 1 2 3). Pass a paginator:
+       {{ partial "pager.html" $paginator }}
+     It only appears when there is more than one page. */}}
+{{ $pg := . }}
+{{ if gt $pg.TotalPages 1 }}
+<nav class="pager" aria-label="Pagination">
+  {{ if $pg.HasPrev }}<a href="{{ $pg.Prev.URL }}" aria-label="Newer posts">&larr;</a>{{ else }}<span class="pager-off">&larr;</span>{{ end }}
+  {{ range $pg.Pagers }}
+    {{ if eq .PageNumber $pg.PageNumber }}<span class="pager-cur">{{ .PageNumber }}</span>{{ else }}<a href="{{ .URL }}">{{ .PageNumber }}</a>{{ end }}
+  {{ end }}
+  {{ if $pg.HasNext }}<a href="{{ $pg.Next.URL }}" aria-label="Older posts">&rarr;</a>{{ else }}<span class="pager-off">&rarr;</span>{{ end }}
+</nav>
+{{ end }}

@@ -1,0 +1,210 @@
+/* Local AI, Simply - one small stylesheet.
+   Cool palette + teal accent + monospace chrome, matching the talk slides.
+   Mono for headings and labels; sans for body prose (comfortable to read). */
+
+:root {
+  --sans: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --mono: ui-monospace, "SF Mono", "JetBrains Mono", "Cascadia Code", Menlo, Consolas, monospace;
+
+  /* Committed to the dark "slide" look: deep blue-teal background, teal accent. */
+  --bg:          #0c1317;   /* deep blue-teal, like the talk slides */
+  --text:        #e7eff0;   /* soft off-white */
+  --muted:       #93a7ab;   /* dates, labels */
+  --faint:       #6a7d81;   /* very quiet */
+  --line:        #22333a;   /* hairline */
+  --line-soft:   #1a272d;
+  --link:        #38cfc6;   /* bright teal accent */
+  --accent-ink:  #7fe4dd;   /* teal, brighter */
+  --accent-soft: #12312f;   /* teal wash */
+  --measure:     40rem;     /* reading width */
+}
+
+* { box-sizing: border-box; }
+
+html { font-size: 18px; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+main, .site-head, .site-foot {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+/* Header - tiny and quiet, monospace */
+.site-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  flex-wrap: wrap;
+}
+.brand {
+  font-family: var(--mono);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  text-decoration: none;
+  color: var(--text);
+}
+.site-head nav a {
+  font-family: var(--mono);
+  color: var(--muted);
+  text-decoration: none;
+  margin-left: 1.1rem;
+  font-size: 0.86rem;
+}
+.site-head nav a:hover { color: var(--link); }
+.nav-search { display: inline-flex; align-items: center; }
+.nav-search svg { vertical-align: middle; }
+
+/* Links */
+a { color: var(--link); }
+
+/* Headings - monospace, technical */
+.hero h1, .post h1, .post-card h2, .post h2 {
+  font-family: var(--mono);
+  letter-spacing: -0.01em;
+}
+
+/* Hero / page intro */
+.hero { margin: 1rem 0 2.5rem; }
+.hero h1 {
+  font-size: 1.9rem;
+  line-height: 1.25;
+  margin: 0 0 0.7rem;
+}
+.hero p { color: var(--muted); margin: 0; }
+.privacy-note {
+  font-family: var(--mono);
+  margin-top: 1.5rem !important;
+  font-size: 0.8rem;
+  color: var(--faint);
+}
+
+/* Per-post provenance line - a light food-label footnote */
+.post-disclaimer {
+  font-family: var(--mono);
+  margin-top: 2.5rem;
+  font-size: 0.76rem;
+  color: var(--faint);
+}
+
+/* Post list */
+.post-list { margin-top: 1rem; }
+.post-card {
+  padding: 1.4rem 0;
+  border-top: 1px solid var(--line);
+}
+.post-card:last-child { border-bottom: 1px solid var(--line); }
+.post-card a { text-decoration: none; color: var(--text); }
+.post-card h2 {
+  font-size: 1.1rem;
+  font-weight: 650;
+  margin: 0 0 0.5rem;
+}
+.post-card a:hover h2 { color: var(--link); }
+
+/* Meta row (section + tag + date) - monospace labels */
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  color: var(--muted);
+}
+.meta .section { text-transform: uppercase; letter-spacing: 0.06em; font-size: 0.7rem; color: var(--faint); }
+
+/* Single post body */
+.post { margin: 1rem 0 3rem; }
+.post h1 {
+  font-size: 1.9rem;
+  line-height: 1.25;
+  margin: 0 0 0.7rem;
+}
+.post .meta { margin-bottom: 2rem; }
+.post p { margin: 1.1rem 0; }
+.post h2 { margin-top: 2.2rem; font-size: 1.3rem; }
+.post img { max-width: 100%; height: auto; border-radius: 4px; }
+.post pre {
+  background: #0c1317;
+  color: #e7eff0;
+  padding: 1rem 1.1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 0.85rem;
+}
+.post code { font-family: var(--mono); font-size: 0.9em; }
+.post :not(pre) > code {
+  background: rgba(12, 143, 136, 0.12);
+  padding: 0.1em 0.35em;
+  border-radius: 3px;
+}
+
+/* Authorship stickers - food-label style */
+.pill {
+  display: inline-block;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.02em;
+  padding: 0.15em 0.6em;
+  border-radius: 999px;
+  border: 1px solid transparent;
+}
+.pill--organic  { background: #22301f;         color: #9ac89f;           border-color: #33472f; }
+.pill--human-ai { background: var(--accent-soft); color: var(--accent-ink); border-color: #1c4a46; }
+
+/* Pager (Newer / Older) - monospace */
+.pager {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: var(--mono);
+  margin: 2.5rem 0 1rem;
+  font-size: 0.85rem;
+}
+.pager a, .pager span { padding: 0.15em 0.6em; border-radius: 4px; text-decoration: none; }
+.pager a { color: var(--link); }
+.pager a:hover { background: var(--accent-soft); }
+.pager-cur { color: var(--text); background: var(--accent-soft); }
+.pager-off { color: var(--faint); }
+
+/* Search */
+#q {
+  width: 100%;
+  font-family: var(--mono);
+  font-size: 1rem;
+  color: var(--text);
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--line);
+  padding: 0.5rem 0;
+  outline: none;
+}
+#q:focus { border-bottom-color: var(--link); }
+.muted { color: var(--muted); }
+
+/* Footer - monospace */
+.site-foot {
+  font-family: var(--mono);
+  margin: 4rem auto;
+  padding-top: 2rem;
+  border-top: 1px solid var(--line);
+  color: var(--faint);
+  font-size: 0.82rem;
+  text-align: center;
+}
+.site-foot p { margin: 0.3rem 0; }
+.foot-mission { color: var(--muted); }
+.site-foot a { color: var(--muted); }

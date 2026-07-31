@@ -1,0 +1,8 @@
+{{/* The little food-label sticker. Use it like: {{ partial "authorship.html" . }}
+     It reads a post's `authorship` field and shows a coloured pill:
+       organic   -> green  "Organic"     (written by a human)
+       human-ai  -> teal   "Human + AI"  (written with AI help) */}}
+{{- with .Params.authorship -}}
+  {{- $labels := dict "organic" "Organic" "human-ai" "Human + AI" -}}
+  <span class="pill pill--{{ . }}">{{ index $labels . | default . }}</span>
+{{- end -}}

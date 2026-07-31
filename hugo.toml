@@ -1,0 +1,44 @@
+baseURL = "https://blog.example.com/"
+locale = "en"
+title = "Local AI, Simply"
+defaultContentLanguage = "en"
+
+# We don't use Hugo's built-in tags/categories - keeps the site quiet.
+# The authorship "sticker" is a simple per-post field, not a taxonomy.
+[taxonomies]
+
+# Show newest posts first on list pages.
+[params]
+  author = "Oluwafemi Olawoyin"
+  description = "A calm, quiet guide to running AI on your own machine. No hype, no noise."
+
+# --- Multi-language (Phase 2) ---
+# When you're ready for more languages, uncomment this block and add content
+# under content/fr/, content/es/, etc. English works fine on its own until then.
+# [languages]
+#   [languages.en]
+#     languageName = "English"
+#     weight = 1
+#   [languages.fr]
+#     languageName = "Francais"
+#     weight = 2
+
+# You are the only author, so allow raw HTML in Markdown (e.g. to place an image
+# exactly where you want it). Safe here because no one else can submit content.
+[markup.goldmark.renderer]
+  unsafe = true
+
+# Syntax highlighting on code blocks - a muted dark theme, kept as calm as coloring gets.
+# Change `style` to taste (e.g. "nord", "onedark", "dracula"); full list: `hugo gen chromastyles -h`.
+[markup.highlight]
+  style = "nord"
+  noClasses = true
+  tabWidth = 2
+
+# Also emit an index.json of all posts - the search page reads it in the browser.
+[outputs]
+  home = ['html', 'rss', 'json']
+
+# Show 4 posts per page; older posts spill onto /page/2/, /page/3/, ...
+[pagination]
+  pagerSize = 4

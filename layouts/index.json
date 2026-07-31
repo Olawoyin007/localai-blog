@@ -1,0 +1,12 @@
+{{- /* Search index: a JSON list of every post. The /search/ page reads this in the
+       browser. It is rebuilt automatically on every build - never edit it by hand. */ -}}
+{{- $list := slice -}}
+{{- range where .Site.RegularPages "Type" "in" (slice "beginner" "advanced" "wellbeing") -}}
+  {{- $list = $list | append (dict
+      "title"      .Title
+      "url"        .RelPermalink
+      "section"    (.Section | title)
+      "authorship" (or .Params.authorship "")
+      "content"    .Plain) -}}
+{{- end -}}
+{{- $list | jsonify -}}
