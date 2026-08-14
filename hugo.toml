@@ -1,4 +1,4 @@
-baseURL = "https://blog.example.com/"
+baseURL = "https://simplylocalai.com/"
 locale = "en"
 title = "Local AI, Simply"
 defaultContentLanguage = "en"
@@ -41,4 +41,4 @@ defaultContentLanguage = "en"
 
 # Show 4 posts per page; older posts spill onto /page/2/, /page/3/, ...
 [pagination]
-  pagerSize = 4
+  pagerSize = 6

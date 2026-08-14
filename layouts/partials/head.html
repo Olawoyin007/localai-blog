@@ -21,4 +21,7 @@
 <meta name="twitter:card" content="summary">
 
 <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
-<link rel="stylesheet" href="{{ "css/style.css" | relURL }}">
+{{/* Fingerprinted: the filename changes whenever the CSS changes, so a browser
+     can never serve a stale cached stylesheet. */}}
+{{ $style := resources.Get "css/style.css" | fingerprint }}
+<link rel="stylesheet" href="{{ $style.RelPermalink }}">

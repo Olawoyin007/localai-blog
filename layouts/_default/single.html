@@ -1,14 +1,21 @@
-{{/* One post: title, the meta row (section . sticker . date), your words,
-     then the "Ingredients" footnote. */}}
+{{/* One post: title, the meta row (section . sticker), your words,
+     then a quiet foot: faint date + the "Ingredients" receipt. */}}
 {{ define "main" }}
-<article class="post">
+<article class="post{{ with .Params.authorship }} post--{{ . }}{{ end }}">
   <h1>{{ .Title }}</h1>
+  {{/* Section chip only for real sections (Intro/Plumbing/Wellbeing); a top-level page
+       like About has the site root as its section, which would just echo the title. */}}
+  {{ $showSection := and .CurrentSection (not .CurrentSection.IsHome) }}
+  {{ if or $showSection .Params.authorship }}
   <div class="meta">
-    {{ with .Section }}<span class="section">{{ . | title }}</span>{{ end }}
+    {{ if $showSection }}<span class="section">{{ .CurrentSection.Title }}</span>{{ end }}
     {{ partial "authorship.html" . }}
-    {{ if not .Date.IsZero }}<time>{{ .Date.Format "Jan 2, 2006" }}</time>{{ end }}
   </div>
+  {{ end }}
   {{ .Content }}
-  {{ partial "disclaimer.html" . }}
+  <div class="post-foot">
+    {{ if not .Date.IsZero }}<time>{{ .Date.Format "Jan 2, 2006" }}</time>{{ end }}
+    {{ partial "disclaimer.html" . }}
+  </div>
 </article>
 {{ end }}

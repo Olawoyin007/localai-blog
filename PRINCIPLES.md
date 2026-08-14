@@ -22,9 +22,9 @@ their own machine. Every choice on this site should serve that, and nothing else
 - **No newsletter service (yet).** RSS already lets people follow with zero infrastructure. Add a newsletter only if people actually ask for one.
 - **No Google Analytics or ad/tracking scripts.** Watching readers contradicts everything the site stands for. Default to measuring nothing. If ever curious, read server logs or self-host a privacy-friendly counter.
 - **No JavaScript framework.** The site is static HTML on purpose. The only script is the tiny search on `/search/`. Keep it that way.
-- **Only two authorship labels: Human and Human + AI.** Do not add a third. The charm is that there are only two.
+- **Only two authorship labels: Organic and Human + AI.** Do not add a third. The charm is that there are only two.
 - **No video hosted or embedded on the site.** Videos live on your YouTube channel - link to them, and never paste an embed iframe (an embed loads Google's trackers). Keep the pages themselves light and text-first.
-- **Keep the top nav to three sections** (Beginner, Advanced, Wellbeing) plus the search icon. About lives in the footer.
+- **Keep the top nav to three sections** (Intro, Plumbing, Wellbeing) plus the search icon. About lives in the footer.
 - **No cookie banners, popups, modals, or "subscribe" overlays.** Ever.
 
 ## The test before adding anything

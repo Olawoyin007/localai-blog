@@ -30,13 +30,22 @@ body {
   font-family: var(--sans);
   line-height: 1.65;
   -webkit-font-smoothing: antialiased;
+  /* Always fill at least the full window, so the dark background covers every
+     page the same, no matter how few posts it has. */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 main, .site-head, .site-foot {
+  width: 100%;
   max-width: var(--measure);
   margin: 0 auto;
   padding: 0 1.25rem;
 }
+
+/* Let the content grow to push the footer to the bottom on short pages. */
+main { flex: 1 0 auto; }
 
 /* Header - tiny and quiet, monospace */
 .site-head {
@@ -97,6 +106,15 @@ a { color: var(--link); }
   font-size: 0.76rem;
   color: var(--faint);
 }
+/* The quiet foot of a post: faint date sitting just above the receipt. */
+.post-foot { margin-top: 2.5rem; }
+.post-foot time { display: block; font-family: var(--mono); font-size: 0.76rem; color: var(--faint); }
+.post-foot .post-disclaimer { margin-top: 0.5rem; }
+
+/* Organic posts get a kinder, dark olive-green wash over the whole page. */
+.body--organic { background: #1a1f0e; }
+/* ...and sit closer together, no gap between paragraphs - a hand-written feel. */
+.body--organic .post p { margin: 0; }
 
 /* Post list */
 .post-list { margin-top: 1rem; }
@@ -149,6 +167,31 @@ a { color: var(--link); }
   background: rgba(12, 143, 136, 0.12);
   padding: 0.1em 0.35em;
   border-radius: 3px;
+}
+
+/* Tables - readable, and they scroll inside their own box on narrow screens
+   instead of stretching the whole page sideways (the classic mobile bug). */
+.post table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  border-collapse: collapse;
+  margin: 1.6rem 0;
+  font-size: 0.9rem;
+}
+.post th, .post td {
+  border: 1px solid var(--line);
+  padding: 0.45rem 0.75rem;
+  text-align: left;
+  vertical-align: top;
+}
+.post th { background: var(--accent-soft); color: var(--text); font-family: var(--mono); }
+
+/* Small screens (phones): ease the base size so text isn't oversized, and
+   rein in the big headings a touch. Everything else already flows to one column. */
+@media (max-width: 30rem) {
+  html { font-size: 16px; }
+  .post h1 { font-size: 1.6rem; }
 }
 
 /* Authorship stickers - food-label style */
@@ -207,4 +250,5 @@ a { color: var(--link); }
 }
 .site-foot p { margin: 0.3rem 0; }
 .foot-mission { color: var(--muted); }
+.foot-tally { color: var(--accent-ink); }
 .site-foot a { color: var(--muted); }

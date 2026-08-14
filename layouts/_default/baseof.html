@@ -3,15 +3,20 @@
 <!DOCTYPE html>
 <html lang="{{ .Site.Language.Lang | default "en" }}">
 <head>{{ partial "head.html" . }}</head>
-<body>
+<body{{ with .Params.authorship }} class="body--{{ . }}"{{ end }}>
   {{ partial "header.html" . }}
 
   <main>{{ block "main" . }}{{ end }}</main>
 
-  {{/* Footer: the mission shows on every page; your name only on the homepage
-       and the About page. RSS is always here. */}}
+  {{/* Footer: the mission, a live count of the two labels, and the quiet ethos line
+       show on every page; your name only on the homepage and the About page. RSS is
+       always here. The tally counts published posts, so it keeps itself up to date. */}}
+  {{ $guide := where .Site.RegularPages "Type" "in" (slice "beginner" "advanced" "wellbeing") }}
+  {{ $hai := len (where $guide "Params.authorship" "human-ai") }}
+  {{ $org := len (where $guide "Params.authorship" "organic") }}
   <footer class="site-foot">
     <p class="foot-mission">Made to help more people run AI on their own hardware.</p>
+    <p class="foot-tally">{{ $org }} Organic &middot; {{ $hai }} Human + AI</p>
     <p class="foot-by">{{ if or .IsHome (eq .RelPermalink "/about/") }}<a href="/about/">{{ .Site.Params.author | default "..." }}</a> &middot; {{ end }}<a href="/index.xml">RSS</a></p>
   </footer>
 </body>

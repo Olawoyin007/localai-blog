@@ -5,7 +5,7 @@ A quick reminder to myself when I sit down to write. Pick the section by asking:
 
 ---
 
-## Beginner
+## Intro
 
 **Who:** someone who has never run AI on their own machine. Maybe a little nervous.
 
@@ -26,7 +26,7 @@ the sentence or cut it.
 
 ---
 
-## Advanced
+## Plumbing
 
 **Who:** someone who already runs models and wants to go further.
 
@@ -43,7 +43,7 @@ the sentence or cut it.
 - Anything with a real trade-off to weigh.
 
 **Rule of thumb:** a beginner might not follow it, and that's fine. But it must still
-be *plainly written* - advanced is not an excuse for a wall of jargon.
+be *plainly written* - plumbing is not an excuse for a wall of jargon.
 
 ---
 

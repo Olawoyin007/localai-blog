@@ -1,8 +1,10 @@
-{{/* The "Ingredients" footnote at the foot of a post, from its `authorship` field. */}}
-{{- with .Params.authorship -}}
-  {{- $notes := dict
-      "organic"  "Ingredients: 100% human."
-      "human-ai" "Ingredients: human + AI."
-  -}}
-  {{- with index $notes . -}}<p class="post-disclaimer">{{ . }}</p>{{- end -}}
+{{/* The "Ingredients" receipt at the foot of a post: an honest provenance note
+     from the `authorship` field. Kept general - no model named.
+       organic   -> 100% human.
+       human-ai  -> human + AI, general. */}}
+{{- $a := .Params.authorship -}}
+{{- if eq $a "organic" -}}
+  <p class="post-disclaimer">Ingredients: 100% human.</p>
+{{- else if eq $a "human-ai" -}}
+  <p class="post-disclaimer">Ingredients: human + AI.</p>
 {{- end -}}

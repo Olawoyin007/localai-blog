@@ -1,5 +1,5 @@
 +++
-title = "Beginner"
+title = "Intro"
 +++
 
-Start here. Plain-words guides to running AI on your own machine, no jargon.
+Plain-words guides to running AI on your own machine, with no jargon.

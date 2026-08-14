@@ -80,28 +80,16 @@ see work in progress. (If `hugo` isn't found, use the full path `~/.local/bin/hu
 
 ## Publish it
 
-1. Build the finished site:
+There is no manual deploy. The live site follows GitHub.
+
+1. Save and push your writing:
    ```bash
-   hugo
+   git add -A && git commit -m "New post" && git push
    ```
-   This writes everything into `public/` (drafts are left out automatically).
+2. That's it. The server checks GitHub every few minutes, pulls anything new, and
+   rebuilds itself. Your post appears on its own.
 
-2. Copy it to your server (replace with your real host + path):
-   ```bash
-   rsync -az --delete public/ deploy@YOUR-SERVER:/srv/localai-blog/
-   ```
-
-3. On the server, Caddy just serves the folder:
-   ```
-   blog.yourdomain.com {
-       encode zstd gzip
-       root * /srv/localai-blog
-       file_server
-   }
-   ```
-
-Then save your work: `git add -A && git commit -m "New post" && git push`.
-(`public/` is git-ignored on purpose - git tracks your writing, rsync ships the built HTML.)
+(`public/` is git-ignored on purpose - git tracks your writing, the server builds the HTML.)
 
 ---
 
@@ -138,3 +126,7 @@ Install Hugo (one binary): `sudo apt install hugo`, or grab the latest from
 Hugo has this built in. When you're ready, uncomment the `[languages]` block in
 `hugo.toml` and add posts under `content/fr/`, `content/es/`, etc. English works on
 its own until then.
+
+## License
+
+The code - templates, styles, and scripts - is under the [MIT license](LICENSE).

@@ -1,5 +1,5 @@
 +++
-title = "Advanced"
+title = "Plumbing"
 +++
 
-Deeper dives for when you want to go further - quantization, vision models, and more.
+The engineering underneath - engines, memory, gateways, agents, and more.

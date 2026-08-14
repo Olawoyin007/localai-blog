@@ -5,7 +5,7 @@
   {{- $list = $list | append (dict
       "title"      .Title
       "url"        .RelPermalink
-      "section"    (.Section | title)
+      "section"    .CurrentSection.Title
       "authorship" (or .Params.authorship "")
       "content"    .Plain) -}}
 {{- end -}}
