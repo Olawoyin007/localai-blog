@@ -72,6 +72,8 @@ main { flex: 1 0 auto; }
   font-size: 0.86rem;
 }
 .site-head nav a:hover { color: var(--link); }
+/* First link needs no leading gap - keeps the nav flush-left when it wraps below the brand on narrow screens. */
+.site-head nav a:first-child { margin-left: 0; }
 .nav-search { display: inline-flex; align-items: center; }
 .nav-search svg { vertical-align: middle; }
 
