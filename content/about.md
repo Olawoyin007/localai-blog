@@ -32,4 +32,4 @@ Every post carries a small sticker, like the label on a piece of fruit, showing 
 
 [GitHub](https://github.com/Olawoyin007) &middot;
 [LinkedIn](https://www.linkedin.com/in/oluwafemi-olawoyin-73a2a2163/) &middot;
-[X](https://x.com/Olaw_femi)
+[X](https://x.com/Olaw_femi/all)
