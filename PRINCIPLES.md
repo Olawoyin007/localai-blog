@@ -5,8 +5,7 @@ addition at a time. This file is the guardrail. Read it before adding anything.
 
 ## The spirit
 
-**The job is not to fight the system - it is to quietly help the people.** No arguing,
-no outrage, no taking sides. Just clear, calm help for anyone who wants to run AI on
+Just clear, calm help for anyone who wants to run AI on
 their own machine. Every choice on this site should serve that, and nothing else.
 
 ## What it is
