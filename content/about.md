@@ -2,9 +2,11 @@
 title = "About Me"
 +++
 
+<img src="/image/about-me.jpg" alt="Femi" width="160" style="border-radius:50%; display:block; margin:0 auto 1.5rem;">
+
 I'm **Femi**, a data and AI engineer who loves running models on my own hardware. My real interest isn't the models themselves but the quiet engineering underneath them - memory pools, serving, the plumbing that keeps a model alive and well-behaved on a local machine.
 
-Here's what I care about more than anything else on this site. I want to help as many people as possible run an AI model on their own hardware - even just a phone - no matter how small the model is. Just to put this within reach of ordinary people, one person at a time. That desire is the whole reason this site exists.
+This site exists to help as many people as possible run an AI model on their own hardware - even just a phone - no matter how small the model is. Just to put this within reach of ordinary people, one person at a time.
 
 I build restrained AI tools designed to run locally - **[empathySync](https://github.com/Olawoyin007/empathySync)**, a local assistant built to make you need it less rather than more, and **[intentKeeper](https://github.com/Olawoyin007/intentKeeper)**, a filter that surfaces the manipulation in your feed before it lands. The same idea runs under both: the AI holds back, and the person stays in charge.
 

@@ -19,7 +19,7 @@ Once you can see the pros that plainly, the cons of each are easy enough to work
 
 ## How I actually shuffle them
 
-I use local AI for my own projects, my experimenting, my research. When I need deeper thinking, or a complex breakdown of something, I reach for cloud AI. But never for anything with sensitive data. That's the line I don't cross.
+I use local AI for my own projects, my experimenting, my research. When I need deeper thinking, or a complex breakdown of something, I reach for cloud AI. But never for anything with sensitive data. That's the line I try to avoid.
 
 That's how I shuffle the two. Both are of benefit. Neither one wins.
 

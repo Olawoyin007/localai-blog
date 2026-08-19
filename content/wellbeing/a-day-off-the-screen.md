@@ -11,4 +11,4 @@ This might be difficult for many, which is understandable. However, once in a wh
 
 A day of rest is a day I find myself actually being able to cut out most distractions. I sit in silence for some moment, I relax, trying to breathe, and if possible, walk in a calm park.
 
-It can be hard, as there are a lot of things to maybe attend to, but well - any opportunity that arises, or that we can make, all in, haha!
+It can be hard, as there are a lot of things to maybe attend to, but well, any opportunity that arises for rest or that we can create, all in for the rest haha!
