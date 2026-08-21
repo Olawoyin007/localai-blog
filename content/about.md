@@ -4,9 +4,7 @@ title = "About Me"
 
 <img src="/image/about-me.jpg" alt="Femi" width="160" style="border-radius:50%; display:block; margin:0 auto 1.5rem;">
 
-I'm **Femi**, a data and AI engineer who loves running models on my own hardware. My real interest isn't the models themselves but the quiet engineering underneath them - memory pools, serving, the plumbing that keeps a model alive and well-behaved on a local machine.
-
-This site exists to help as many people as possible run an AI model on their own hardware - even just a phone - no matter how small the model is. Just to put this within reach of ordinary people, one person at a time.
+I'm **Femi**, a data and AI engineer who loves running models on my own hardware. My real interest isn't the models themselves but the quiet engineering underneath them - memory pools, serving, the plumbing that keeps a model alive and well-behaved on a local machine. After years on real systems, I want to see what ordinary people can do once they own their own AI.
 
 I build restrained AI tools designed to run locally - **[empathySync](https://github.com/Olawoyin007/empathySync)**, a local assistant built to make you need it less rather than more, and **[intentKeeper](https://github.com/Olawoyin007/intentKeeper)**, a filter that surfaces the manipulation in your feed before it lands. The same idea runs under both: the AI holds back, and the person stays in charge.
 
@@ -18,6 +16,8 @@ I also think about this more formally. I presented a paper, <a href="https://aic
 Mostly, I take pleasure in simplicity, and in sharing what I learn.
 
 ## Why this site
+
+This site exists to help as many people as possible run an AI model on their own hardware - even just a phone - no matter how small the model is. Just to put this within reach of ordinary people, one person at a time.
 
 AI has gotten loud - pop-ups, hype, a new "revolution" every week. This is a quieter corner: a place to learn how to run AI on your own machine, one simple step at a time. No gatekeeping, no need for a powerful GPU or a cloud account. Just you and a model you own.
 
