@@ -14,7 +14,7 @@ Sometimes the cloud is the right tool. Sometimes a small model running on your o
 
 What interests me is the possibility of giving people more ownership over the technology they use - their data, their models, and the ability to experiment without needing a powerful machine or a cloud account.
 
-That thinking has led me to build things like **[empathySync](https://github.com/Olawoyin007/empathySync)**, a local assistant designed to help without trying to make itself indispensable, and **[intentKeeper](https://github.com/Olawoyin007/intentKeeper)**, a filter that looks for signs of manipulation in the things we see online.
+That thinking has led me to build open source tools like **[empathySync](https://github.com/Olawoyin007/empathySync)**, a local assistant designed to help without trying to make itself indispensable, and **[intentKeeper](https://github.com/Olawoyin007/intentKeeper)**, a filter that looks for signs of manipulation in the things we see online.
 
 I'm interested in what happens when ideas like restraint and user autonomy are treated as engineering problems rather than just good intentions. Can those principles be built into the system itself? Can technology be useful without quietly asking for more of our attention, our data, or our dependence?
 
