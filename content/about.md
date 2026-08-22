@@ -4,33 +4,47 @@ title = "About Me"
 
 <img src="/image/about-me.jpg" alt="Femi" width="160" style="border-radius:50%; display:block; margin:0 auto 1.5rem;">
 
-I'm **Femi**, a data and AI engineer who loves running models on my own hardware. My real interest isn't the models themselves but the quiet engineering underneath them - memory pools, serving, the plumbing that keeps a model alive and well-behaved on a local machine. After years on real systems, I want to see what ordinary people can do once they own their own AI.
+I'm **Femi**, a data and AI engineer.
 
-I build restrained AI tools designed to run locally - **[empathySync](https://github.com/Olawoyin007/empathySync)**, a local assistant built to make you need it less rather than more, and **[intentKeeper](https://github.com/Olawoyin007/intentKeeper)**, a filter that surfaces the manipulation in your feed before it lands. The same idea runs under both: the AI holds back, and the person stays in charge.
+I like understanding what happens underneath things - memory, models, serving, the small pieces of plumbing that make a system work. I've spent years working with real systems, and these days a lot of my curiosity is around what happens when AI is brought closer to home.
 
-I also think about this more formally. I presented a paper, <a href="https://aice-symposium.github.io/Olawoyin.pdf" target="_blank" rel="noopener"><em>Restraint as Architecture: When AI Ethics Lives in the Code, Not the Consciousness</em></a>, at AICE - the AI, Consciousness and Ethics symposium, part of the AISB Convention at the University of Sussex. I've also spoken at the Apache Airflow Summit.
+I like running models on my own hardware. Not because I think local AI is always better than the cloud, but because I think people should have the choice.
 
-<!-- When the Glasgow talk is delivered (Community Over Code, Oct 2026), update the line above to:
-     I've also spoken at the Apache Airflow Summit and Community Over Code (Glasgow). -->
+Sometimes the cloud is the right tool. Sometimes a small model running on your own machine is enough. I use both.
 
-Mostly, I take pleasure in simplicity, and in sharing what I learn.
+What interests me is the possibility of giving people more ownership over the technology they use - their data, their models, and the ability to experiment without needing a powerful machine or a cloud account.
 
-This site exists to help as many people as possible run an AI model on their own hardware - even just a phone - no matter how small the model is. Just to put this within reach of ordinary people, one person at a time.
+That thinking has led me to build things like **[empathySync](https://github.com/Olawoyin007/empathySync)**, a local assistant designed to help without trying to make itself indispensable, and **[intentKeeper](https://github.com/Olawoyin007/intentKeeper)**, a filter that looks for signs of manipulation in the things we see online.
 
-AI has gotten loud - pop-ups, hype, a new "revolution" every week. This is a quieter corner: a place to learn how to run AI on your own machine, one simple step at a time. No gatekeeping, no need for a powerful GPU or a cloud account. Just you and a model you own.
+I'm interested in what happens when ideas like restraint and user autonomy are treated as engineering problems rather than just good intentions. Can those principles be built into the system itself? Can technology be useful without quietly asking for more of our attention, our data, or our dependence?
 
-I write three kinds of posts:
+I don't have all the answers. I'm mostly following a line of curiosity and seeing where it leads.
 
-- **Intro** - plain-words guides, no jargon.
-- **Plumbing** - the engineering underneath (engines, memory, gateways, agents), and the bigger questions around it.
-- **Wellbeing** - small notes on keeping a healthier relationship with our screens.
+I also write and speak about some of these ideas. I presented <a href="https://aice-symposium.github.io/Olawoyin.pdf" target="_blank" rel="noopener"><em>Restraint as Architecture: When AI Ethics Lives in the Code, Not the Consciousness</em></a> at the AICE symposium, part of the AISB Convention at the University of Sussex, and I've spoken at the Apache Airflow Summit.
 
-## The two labels
+<!-- When the Glasgow talk is delivered (Community Over Code, Oct 2026), add it to the line above:
+     ...and I've spoken at the Apache Airflow Summit and Community Over Code (Glasgow). -->
 
-Every post carries a small sticker, like the label on a piece of fruit, showing how it was made:
+## What I write about
+
+There are three kinds of posts here:
+
+- **Intro** - plain-words guides to local AI, without assuming you already know the jargon.
+- **Plumbing** - the engineering underneath: models, memory, serving, gateways, agents, and the things that make them work.
+- **Wellbeing** - small thoughts about keeping a healthier relationship with the technology we use.
+
+The aim is simple: to help more people run AI on their own hardware - even if that hardware is just a phone. You don't need the biggest model, and you don't need to choose between local and cloud. You can start with what you have, learn how it works, and see what you can do with it.
+
+That's what I'm doing too.
+
+## How these pages are made
+
+Some posts are written by me. Others are made together with AI. I label them so you know which is which:
 
 - **Organic** - written by a human.
 - **Human + AI** - made together.
+
+I like simple things and useful technology. This site is just a place to share what I learn.
 
 ## Find me
 
