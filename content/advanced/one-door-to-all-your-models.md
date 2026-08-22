@@ -57,8 +57,6 @@ A gateway's model list is a *claim*, not a fact. Mine once advertised nine model
 
 Two things follow from that. First, after any change, check the list against what is truly running. Second - and this is the tie to how I serve big models - if a backend only runs *one* model at a time (as vLLM does on my box), then only that one answers. The others in the list return "not found" until you switch to them. The door is real; what is behind it still has to actually be home.
 
-## What this means for you
-
 You do not need my number of models to want this. The moment you have *two* ways of running models - say Ollama plus one cloud key - a gateway earns its place:
 
 - **Point every tool at one address.** Set it once, forget where models live.

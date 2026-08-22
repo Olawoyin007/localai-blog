@@ -94,8 +94,6 @@ A small kindness to future-me, who is always tired and always in a hurry.
 
 One last quiet choice: after a reboot, the script loads **nothing** automatically. If a bad model could restart the box, and the box then reloaded that same bad model, I would have a machine stuck in a reboot loop. Starting empty means a crash can never repeat itself on its own.
 
-## What this means for you
-
 You do not need Docker, or vLLM, or a big box. The shape is what travels:
 
 - **One heavy thing at a time.** Clear the old before you start the new.

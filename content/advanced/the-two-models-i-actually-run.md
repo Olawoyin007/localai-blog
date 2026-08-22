@@ -48,8 +48,6 @@ The two flagships map to the two things I actually do:
 
 A model that is wonderful to talk to can be useless as an agent, and the reverse. Ranking them against each other is the wrong question. The right question is which job is in front of you.
 
-## What this means for you
-
 You do not need a 122-billion model, or even two big ones. The split scales all the way down:
 
 - **Keep a model to chat with and a model to do tasks with.** They are different tools; let them be.

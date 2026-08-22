@@ -32,8 +32,6 @@ For a long time my local AI was powerful but awkward - great if you were happy i
 
 That is the whole sovereign-stack idea finally made comfortable: the AI runs on your own machine, and using it feels as easy as the thing you were trying to replace.
 
-## What this means for you
-
 You do not need my hardware to want this. A self-hosted workspace like Odysseus runs on modest machines too, and points at whatever models you have - even a single small one:
 
 - **It gives your local models a proper home** - one calm window instead of a terminal.

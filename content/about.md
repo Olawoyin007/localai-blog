@@ -15,8 +15,6 @@ I also think about this more formally. I presented a paper, <a href="https://aic
 
 Mostly, I take pleasure in simplicity, and in sharing what I learn.
 
-## Why this site
-
 This site exists to help as many people as possible run an AI model on their own hardware - even just a phone - no matter how small the model is. Just to put this within reach of ordinary people, one person at a time.
 
 AI has gotten loud - pop-ups, hype, a new "revolution" every week. This is a quieter corner: a place to learn how to run AI on your own machine, one simple step at a time. No gatekeeping, no need for a powerful GPU or a cloud account. Just you and a model you own.

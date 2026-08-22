@@ -47,8 +47,6 @@ My runbook has a section I am oddly proud of: the things that broke *last* time,
 
 That list is worth more than the rest of the runbook combined. Your past self already paid for those lessons. Write them down so you only pay once.
 
-## What this means for you
-
 You do not need a rack of services for any of this to matter. Even moving a single local setup to a new laptop, the same shape holds:
 
 - **Write the steps down first.** Improvising mid-move is how things go missing.

@@ -43,8 +43,6 @@ That happened to me with **Mistral Small 4**. It fit comfortably. It loaded. The
 
 **The lesson:** "fits" and "loads" tell you *nothing* about whether it will actually answer. This gate stays invisible until the first real message. It is the one that surprised me most - and again, [r/ollama](https://www.reddit.com/r/ollama/) is where you find out whether a crash is your setup or your chip generation. (Same as before: go in for your one answer, leave when you have it, and do not measure yourself against anyone posting there.)
 
-## What this means for you
-
 The four gates split neatly into two halves:
 
 - **Gates 1 and 2 you can check for free, before downloading.** The size maths, and whether your software supports the model yet - and a tool like [llmfit](https://www.llmfit.org/) answers both at once by reading your machine against its model database.

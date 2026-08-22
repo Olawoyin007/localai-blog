@@ -47,8 +47,6 @@ The fix was dull and correct. Give each model a right-sized memory budget instea
 - **One heavy model at a time.** With vLLM, switching which model is loaded costs real time - a couple of minutes for a small one, closer to ten for the giant.
 - **Models are huge.** You need external drives. The internal disk fills faster than you expect.
 
-## What this means for you
-
 If you want a quiet, offline box to experiment with genuinely large models - run several tools side by side, even try training your own - this is rare and good at its size. Almost nothing else this small lets you hold a 100B model in your own room with the network cable unplugged.
 
 If you want a no-thought replacement for the cloud, or you depend on software with no arm64 build, or you were picturing 128GB of spare graphics memory to fill however you like - you will spend your first week fighting it.

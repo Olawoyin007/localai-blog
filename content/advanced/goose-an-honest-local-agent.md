@@ -39,8 +39,6 @@ An agent is only useful if the model can actually *call tools* - say "run this c
 
 None of that is a dealbreaker for me. It is the difference between a car you own outright and a chauffeur you rent. The chauffeur is smoother. But the car is *yours*, it is always in the drive, and everywhere it takes you stays with you.
 
-## What this means for you
-
 You do not need my exact models. Goose runs against a small Ollama model on a laptop just as happily:
 
 - **Point it at your gateway (or straight at Ollama)** and pick a model that can call tools.

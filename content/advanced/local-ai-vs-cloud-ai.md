@@ -29,8 +29,6 @@ We're starting to get very powerful open source models now, even the new trillio
 
 Because this site isn't about that fight. It's for the individual being able to run AI on their own machine, or even their phone. It doesn't need to be grand. You don't need a giant model to go head to head with anyone.
 
-## What this means for you
-
 Being able to run local AI, no matter how small the model is, is the whole point. That's the core purpose of this site: as many individuals as possible running AI on their own hardware.
 
 So that's my take on local versus cloud. Don't pick a side. Keep both, know which job needs which, and just trying to keep the sensitive things(relationship, health, spirituality etc) at home.

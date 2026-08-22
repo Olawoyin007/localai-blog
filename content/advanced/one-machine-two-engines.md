@@ -55,8 +55,6 @@ I stopped trusting myself to remember. Now, before either engine loads anything 
 
 It is not clever. It is a seatbelt, written the day after the crash. (I take that script apart in [its own post]({{< relref "the-switcher-i-built" >}}).)
 
-## What this means for you
-
 You may never run a 122-billion model. The lessons shrink to any machine:
 
 - **If you run two ways of loading models, they share the same memory.** The second one can crash the first - or, on a shared-memory machine, crash the whole computer.
