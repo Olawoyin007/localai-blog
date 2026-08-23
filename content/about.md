@@ -6,19 +6,13 @@ title = "About Me"
 
 I'm **Femi**, a data and AI engineer.
 
-I like understanding what happens underneath things - memory, models, serving, the small pieces of plumbing that make a system work. I've spent years working with real systems, and these days a lot of my curiosity is around what happens when AI is brought closer to home.
+I like understanding what happens underneath things - memory, models, serving, the plumbing that makes a system work. I've spent years on real systems, and lately most of my curiosity is about bringing AI closer to home.
 
-I like running models on my own hardware. Not because I think local AI is always better than the cloud, but because I think people should have the choice.
+I run models on my own hardware. Local AI isn't always better than the cloud, and I use both. What I care about is that people have the choice, and more ownership over the technology they use - their data, the models they run, the freedom to experiment without a powerful machine or a cloud account.
 
-Sometimes the cloud is the right tool. Sometimes a small model running on your own machine is enough. I use both.
+That's led me to build the open source tools **[empathySync](https://github.com/Olawoyin007/empathySync)**, a local assistant made to help without making itself indispensable, and **[intentKeeper](https://github.com/Olawoyin007/intentKeeper)**, a filter that looks for signs of manipulation in what we see online. Both come from the same question: whether ideas like restraint and user autonomy can be built into a system as engineering, not just stated as good intentions.
 
-I like the idea of people having more ownership over the technology they use - their data, their models, and the ability to experiment without needing a powerful machine or a cloud account.
-
-That thinking has led me to build open source tools like **[empathySync](https://github.com/Olawoyin007/empathySync)**, a local assistant designed to help without trying to make itself indispensable, and **[intentKeeper](https://github.com/Olawoyin007/intentKeeper)**, a filter that looks for signs of manipulation in the things we see online.
-
-I'm interested in what happens when ideas like restraint and user autonomy are treated as engineering problems rather than just good intentions. I’m curious whether those principles can be built into the system itself? Can technology be useful without quietly asking for more of our attention, our data, or our dependence?
-
-I don't have all the answers. I'm mostly following a line of curiosity and seeing where it leads.
+I don't have all the answers. I'm following the question.
 
 I also write and speak about some of these ideas. I presented <a href="https://aice-symposium.github.io/Olawoyin.pdf" target="_blank" rel="noopener"><em>Restraint as Architecture: When AI Ethics Lives in the Code, Not the Consciousness</em></a> at the AICE symposium, part of the AISB Convention at the University of Sussex, and I've spoken at the Apache Airflow Summit.
 
