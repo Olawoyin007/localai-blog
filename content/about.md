@@ -14,10 +14,7 @@ That's led me to build the open source tools **[empathySync](https://github.com/
 
 I don't have all the answers. I'm following the question.
 
-I also write and speak about some of these ideas. I presented <a href="https://aice-symposium.github.io/Olawoyin.pdf" target="_blank" rel="noopener"><em>Restraint as Architecture: When AI Ethics Lives in the Code, Not the Consciousness</em></a> at the AICE symposium, part of the AISB Convention at the University of Sussex, and I've spoken at the Apache Airflow Summit.
-
-<!-- When the Glasgow talk is delivered (Community Over Code, Oct 2026), add it to the line above:
-     ...and I've spoken at the Apache Airflow Summit and Community Over Code (Glasgow). -->
+I also write and speak about some of these ideas. I presented <a href="https://aice-symposium.github.io/Olawoyin.pdf" target="_blank" rel="noopener"><em>Restraint as Architecture: When AI Ethics Lives in the Code, Not the Consciousness</em></a> at the AICE symposium, part of the AISB Convention at the University of Sussex, and I gave <em>AI Plumbing: Orchestrating Local LLMs with Apache Airflow</em> at Community Over Code (Glasgow). I've also spoken at the Apache Airflow Summit.
 
 ## What I write about
 
