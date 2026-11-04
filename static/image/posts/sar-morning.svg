@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 280" role="img"
+     aria-label="Available memory across one morning, recorded by sar every thirty minutes. It sits flat between 22.3 and 22.6 GB from 07:30 to 10:00, drops to 6.5 GB at 10:30, and recovers to 20.8 GB by 11:00. A warning threshold set at 22 GB sits just below the flat resting state.">
+  <style>
+    .ax   { stroke: #22333a; stroke-width: 1; }
+    .grid { stroke: #1a272d; stroke-width: 1; }
+    .line { fill: none; stroke: #38cfc6; stroke-width: 2; }
+    .dot  { fill: #38cfc6; }
+    .thr  { stroke: #c98a3f; stroke-width: 1; stroke-dasharray: 4 4; }
+    .tick { font: 11px ui-monospace, Menlo, Consolas, monospace; fill: #6a7d81; }
+    .note { font: 11px system-ui, sans-serif; fill: #93a7ab; }
+    .warn { font: 11px system-ui, sans-serif; fill: #c98a3f; }
+    .cap  { font: 11px system-ui, sans-serif; fill: #6a7d81; }
+  </style>
+
+  <line class="grid" x1="70" y1="148" x2="600" y2="148"/>
+  <line class="grid" x1="70" y1="76"  x2="600" y2="76"/>
+  <text class="tick" x="60" y="224" text-anchor="end">0</text>
+  <text class="tick" x="60" y="152" text-anchor="end">10</text>
+  <text class="tick" x="60" y="80"  text-anchor="end">20</text>
+  <text class="tick" x="60" y="44"  text-anchor="end">GB</text>
+
+  <line class="thr" x1="70" y1="61.6" x2="600" y2="61.6"/>
+  <text class="warn" x="600" y="57" text-anchor="end">threshold set at 22 GB, by guesswork</text>
+
+  <polyline class="line" points="70,57.3 145.7,57.3 221.4,57.3 297.1,58.0 372.9,59.4 448.6,59.4 524.3,173.2 600,70.2"/>
+  <circle class="dot" cx="70"    cy="57.3"  r="3"/>
+  <circle class="dot" cx="145.7" cy="57.3"  r="3"/>
+  <circle class="dot" cx="221.4" cy="57.3"  r="3"/>
+  <circle class="dot" cx="297.1" cy="58.0"  r="3"/>
+  <circle class="dot" cx="372.9" cy="59.4"  r="3"/>
+  <circle class="dot" cx="448.6" cy="59.4"  r="3"/>
+  <circle class="dot" cx="524.3" cy="173.2" r="3"/>
+  <circle class="dot" cx="600"   cy="70.2"  r="3"/>
+
+  <text class="note" x="524.3" y="190" text-anchor="middle">6.5</text>
+
+  <line class="ax" x1="70" y1="220" x2="600" y2="220"/>
+  <text class="tick" x="70"    y="238" text-anchor="middle">07:30</text>
+  <text class="tick" x="221.4" y="238" text-anchor="middle">08:30</text>
+  <text class="tick" x="372.9" y="238" text-anchor="middle">09:30</text>
+  <text class="tick" x="524.3" y="238" text-anchor="middle">10:30</text>
+
+  <text class="cap" x="70" y="268">The flat line is the machine behaving normally. The threshold sat 0.3 GB underneath it.</text>
+</svg>
