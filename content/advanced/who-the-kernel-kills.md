@@ -1,7 +1,7 @@
 +++
 title = "Who the kernel kills: my login died, the 20GB model survived"
 date = 2026-11-04
-weight = 6
+weight = 9
 authorship = "human-ai"
 +++
 

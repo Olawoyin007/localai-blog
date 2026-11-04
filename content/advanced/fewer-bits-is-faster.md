@@ -1,7 +1,7 @@
 +++
 title = "Fewer bits is faster: what quantization buys, and what it costs"
 date = 2026-11-04
-weight = 4
+weight = 11
 authorship = "human-ai"
 +++
 

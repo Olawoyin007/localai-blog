@@ -1,7 +1,7 @@
 +++
 title = "One door to all your models: LiteLLM"
 date = 2026-05-31
-weight = 14
+weight = 20
 authorship = "human-ai"
 +++
 

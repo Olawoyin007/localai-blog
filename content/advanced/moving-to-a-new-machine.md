@@ -1,7 +1,7 @@
 +++
 title = "Moving a whole stack to a new machine"
 date = 2026-04-26
-weight = 17
+weight = 23
 authorship = "human-ai"
 +++
 

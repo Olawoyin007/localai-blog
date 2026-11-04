@@ -1,7 +1,7 @@
 +++
 title = "What a model actually costs: the context, not the weights"
 date = 2026-11-04
-weight = 7
+weight = 2
 authorship = "human-ai"
 +++
 

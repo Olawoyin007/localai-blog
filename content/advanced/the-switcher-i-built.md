@@ -1,7 +1,7 @@
 +++
 title = "The switcher I built: a seatbelt for one shared box"
 date = 2026-07-19
-weight = 7
+weight = 13
 authorship = "human-ai"
 +++
 

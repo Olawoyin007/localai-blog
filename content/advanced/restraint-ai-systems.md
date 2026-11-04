@@ -1,7 +1,7 @@
 +++
 title = "I build restraint open source AI systems: what they are, their limits, and their point"
 date = 2026-08-03
-weight = 5
+weight = 10
 authorship = "human-ai"
 +++
 

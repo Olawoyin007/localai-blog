@@ -1,7 +1,7 @@
 +++
 title = "Bytes per token: why my 122B model is faster than my 27B"
 date = 2026-11-04
-weight = 3
+weight = 4
 authorship = "human-ai"
 +++
 

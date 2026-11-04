@@ -1,7 +1,7 @@
 +++
 title = "Every meter lied: measuring what a model actually costs"
 date = 2026-11-04
-weight = 5
+weight = 7
 authorship = "human-ai"
 +++
 

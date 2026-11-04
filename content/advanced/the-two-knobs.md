@@ -1,7 +1,7 @@
 +++
 title = "The two knobs: one is free, one can reboot your box"
 date = 2026-11-04
-weight = 8
+weight = 14
 authorship = "human-ai"
 +++
 
