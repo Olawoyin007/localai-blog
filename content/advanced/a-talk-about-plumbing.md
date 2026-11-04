@@ -1,7 +1,7 @@
 +++
 title = "I gave a talk about the plumbing"
 date = 2026-10-16
-weight = 12
+weight = 13
 description = "A talk at Community Over Code in Glasgow, about running local models as scheduled work, and the one question I could not answer."
 authorship = "human-ai"
 +++

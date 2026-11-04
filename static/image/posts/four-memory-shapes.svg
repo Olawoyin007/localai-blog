@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 310" role="img"
+     aria-label="Four machines and where a model has to fit. On a phone, one small pool, and a model that does not fit closes the app. On a laptop, one larger pool, and overflow makes everything slow. On a desktop with a graphics card, two separate pools, and the model must fit the small card one, failing with a polite error. On unified memory, one large shared pool, and asking for too much reboots the machine.">
+  <style>
+    .nm  { font: 12px ui-monospace, Menlo, Consolas, monospace; fill: #e7eff0; }
+    .sz  { font: 10px ui-monospace, Menlo, Consolas, monospace; fill: #93a7ab; }
+    .cons{ font: 11px system-ui, sans-serif; fill: #c98a3f; text-anchor: end; }
+    .hd  { font: 11px system-ui, sans-serif; fill: #6a7d81; }
+    .cap { font: 11px system-ui, sans-serif; fill: #6a7d81; }
+    .fits{ fill: #38cfc6; }
+    .nope{ fill: #2b3a3f; }
+    .edge{ fill: none; stroke: #38cfc6; stroke-width: 1.5; }
+  </style>
+
+  <text class="hd" x="130" y="22">where the model has to fit</text>
+  <text class="hd" x="640" y="22" text-anchor="end">when it doesn't</text>
+
+  <text class="nm" x="0" y="52">phone</text>
+  <rect class="fits" x="130" y="38" width="46" height="22" rx="2"/>
+  <text class="sz"   x="182" y="54">~2 GB</text>
+  <text class="cons" x="640" y="54">the app closes</text>
+
+  <text class="nm" x="0" y="107">laptop</text>
+  <rect class="fits" x="130" y="93" width="110" height="22" rx="2"/>
+  <text class="sz"   x="246" y="109">8-16 GB</text>
+  <text class="cons" x="640" y="109">everything gets slow</text>
+
+  <text class="nm" x="0" y="162">+ graphics card</text>
+  <rect class="nope" x="130" y="148" width="150" height="22" rx="2"/>
+  <text class="sz"   x="138" y="164" fill="#6a7d81">machine memory, unusable</text>
+  <rect class="edge" x="292" y="148" width="58" height="22" rx="2"/>
+  <text class="sz"   x="356" y="164">12 GB card</text>
+  <text class="cons" x="640" y="164">a polite error</text>
+
+  <text class="nm" x="0" y="217">unified memory</text>
+  <rect class="fits" x="130" y="203" width="330" height="22" rx="2"/>
+  <text class="sz"   x="466" y="219">128 GB, shared</text>
+  <text class="cons" x="640" y="219">the machine reboots</text>
+
+  <text class="cap" x="0" y="262">Shapes, not to scale. Teal is memory a model can actually use.</text>
+  <text class="cap" x="0" y="280">The card has its own small pool, so the big number beside it is the one that fools you.</text>
+  <text class="cap" x="0" y="298">The last row has no wall between the model and the operating system. That is the whole difference.</text>
+</svg>

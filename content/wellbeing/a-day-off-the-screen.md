@@ -1,7 +1,7 @@
 +++
 title = "A day off the screen"
 date = 2026-08-18
-weight = 30
+weight = 31
 authorship = "organic"
 +++
 

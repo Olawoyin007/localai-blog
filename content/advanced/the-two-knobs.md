@@ -2,7 +2,7 @@
 title = "The two knobs: one is free, one can reboot your box"
 date = 2026-10-26
 description = "One setting reserves memory up front, the other rations it. Raising the wrong one is free; raising the other can reboot the box."
-weight = 15
+weight = 16
 authorship = "human-ai"
 +++
 

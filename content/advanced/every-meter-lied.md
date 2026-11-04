@@ -2,7 +2,7 @@
 title = "Every meter lied: measuring what a model actually costs"
 date = 2026-10-07
 description = "Every tool that reports memory on this box was wrong, one of them by a factor of three. The only honest meter is a before and after."
-weight = 7
+weight = 8
 authorship = "human-ai"
 +++
 

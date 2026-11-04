@@ -1,7 +1,7 @@
 +++
 title = "Run a model on your phone"
 date = 2026-06-14
-weight = 22
+weight = 23
 authorship = "human-ai"
 +++
 
