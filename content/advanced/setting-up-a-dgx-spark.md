@@ -7,6 +7,8 @@ authorship = "human-ai"
 
 I run my whole local setup on a DGX Spark now - a small NVIDIA box that sits on a desk and holds models a normal graphics card could never fit. This is the honest account of setting it up: what it is genuinely good at, and the one edge that reached out and bit me.
 
+{{< fig src="/image/posts/the-box.jpg" alt="A small dark ASUS mini-PC with a finned front, sitting on a desk under a monitor, next to an external hard drive." caption="The whole thing. The external drive beside it is roughly the size of a paperback." >}}
+
 If you take one thing from this post: the whole box lives on a single idea, unified memory, and that idea is both why it is special and how it will reboot itself if you get greedy.
 
 ## What it actually is
