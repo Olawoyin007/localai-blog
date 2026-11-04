@@ -8,13 +8,15 @@ I'm **Femi**, a data and AI engineer.
 
 I like understanding what happens underneath things - memory, models, serving, the plumbing that makes a system work. I've spent years on real systems, and lately most of my curiosity is about bringing AI closer to home.
 
-I run models on my own hardware. Local AI isn't always better than the cloud, and I use both. What I care about is that people have the choice, and more ownership over the technology they use - their data, the models they run, the freedom to experiment without a powerful machine or a cloud account.
+I run models on two machines of my own: a GB10 with 128GB of memory shared between the processor and the GPU, and an older x86 desktop with a discrete RTX 4070 in it. Most of what I have learned came out of the gap between those two, and a fair amount of this site is me writing that down.
+
+Local AI isn't always better than the cloud, and I use both. What I care about is that people have the choice, and more ownership over the technology they use - their data, the models they run, the freedom to experiment without a powerful machine or a cloud account.
 
 That's led me to build the open source tools **[empathySync](https://github.com/Olawoyin007/empathySync)**, a local assistant made to help without making itself indispensable, and **[intentKeeper](https://github.com/Olawoyin007/intentKeeper)**, a filter that looks for signs of manipulation in what we see online. Both come from the same question: whether ideas like restraint and user autonomy can be built into a system as engineering, not just stated as good intentions.
 
 I don't have all the answers. I'm following the question.
 
-I also write and speak about some of these ideas. I presented <a href="https://aice-symposium.github.io/Olawoyin.pdf" target="_blank" rel="noopener"><em>Restraint as Architecture: When AI Ethics Lives in the Code, Not the Consciousness</em></a> at the AICE symposium, part of the AISB Convention at the University of Sussex, and I gave <em>AI Plumbing: Orchestrating Local LLMs with Apache Airflow</em> at Community Over Code (Glasgow). I've also spoken at the Apache Airflow Summit.
+I also write and speak about some of these ideas. I presented <a href="https://aice-symposium.github.io/Olawoyin.pdf" target="_blank" rel="noopener"><em>Restraint as Architecture: When AI Ethics Lives in the Code, Not the Consciousness</em></a> at the AICE symposium, part of the AISB Convention at the University of Sussex, and I gave <a href="https://www.youtube.com/watch?v=d2K-4Kr-a24" target="_blank" rel="noopener"><em>AI Plumbing: Orchestrating Local LLMs with Apache Airflow</em></a> at Community Over Code (Glasgow), which is on YouTube if you want to watch it. I've also spoken at the Apache Airflow Summit.
 
 ## What I write about
 
