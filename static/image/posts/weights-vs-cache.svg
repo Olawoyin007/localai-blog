@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 220" role="img"
+     aria-label="A single stacked bar for one model load. Weights are 4,403 MiB, the context cache is 16,384 MiB, compute is 236 MiB, totalling 21,023 MiB. A marked line shows only 19,647 MiB was free, so the bar overshoots it and the load failed.">
+  <style>
+    .lab  { font: 12px ui-monospace, Menlo, Consolas, monospace; fill: #e7eff0; }
+    .labd { font: 12px ui-monospace, Menlo, Consolas, monospace; fill: #0c1317; }
+    .mut  { font: 11px system-ui, sans-serif; fill: #93a7ab; }
+    .warn { font: 11px system-ui, sans-serif; fill: #c98a3f; }
+    .cap  { font: 11px system-ui, sans-serif; fill: #6a7d81; }
+    .w    { fill: #44595e; }
+    .c    { fill: #38cfc6; }
+    .x    { fill: #7fe4dd; }
+    .free { stroke: #c98a3f; stroke-width: 1.5; stroke-dasharray: 5 4; }
+  </style>
+
+  <text class="mut" x="60" y="40">what one 4.4 GB model asked for</text>
+
+  <rect class="w" x="60"    y="54" width="108"   height="40" rx="2"/>
+  <rect class="c" x="168"   y="54" width="402"   height="40" rx="2"/>
+  <rect class="x" x="570"   y="54" width="6"     height="40" rx="1"/>
+
+  <text class="lab"  x="70"  y="79">4.4 GB</text>
+  <text class="labd" x="178" y="79">16 GB</text>
+
+  <text class="mut" x="60"  y="112">weights</text>
+  <text class="mut" x="168" y="112">context cache</text>
+
+  <line class="free" x1="542" y1="44" x2="542" y2="104"/>
+  <text class="warn" x="542" y="134" text-anchor="middle">19.6 GB free</text>
+  <text class="warn" x="576" y="156" text-anchor="middle">needed 21 GB</text>
+
+  <text class="cap" x="60" y="190">The cache is nearly four times the weights, and the model never asked for it.</text>
+  <text class="cap" x="60" y="208">It inherited a declared context of 131,072 tokens because nothing said otherwise.</text>
+</svg>
