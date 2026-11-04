@@ -1,7 +1,7 @@
 +++
 title = "Odysseus: a private AI workspace on my own box"
 date = 2026-05-03
-weight = 26
+weight = 27
 authorship = "human-ai"
 +++
 

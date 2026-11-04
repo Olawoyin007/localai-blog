@@ -1,7 +1,7 @@
 +++
 title = "Exercise and body movements"
 date = 2026-05-17
-weight = 28
+weight = 29
 authorship = "organic"
 +++
 

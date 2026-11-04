@@ -1,7 +1,7 @@
 +++
 title = "The words you keep seeing, in plain English"
 date = 2026-05-24
-weight = 19
+weight = 20
 authorship = "human-ai"
 +++
 
