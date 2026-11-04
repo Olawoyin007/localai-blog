@@ -2,7 +2,6 @@
 title = "I gave a talk about the plumbing"
 date = 2026-10-16
 weight = 12
-draft = true
 description = "A talk at Community Over Code in Glasgow, about running local models as scheduled work, and the one question I could not answer."
 authorship = "human-ai"
 +++
@@ -11,9 +10,7 @@ In October I stood up at Community Over Code in Glasgow and talked for forty min
 
 The session was in a track called AI Plumbers, which is a good name and partly why I submitted. The room filled with Apache Airflow contributors and committers, which is to say the people who maintain the thing I was describing. That was not the audience I had pictured.
 
-**TODO: video link goes here.**
-
-The slides are below if you prefer reading to watching.
+The recording is on YouTube: [AI Plumbing: Orchestrating Local LLMs with Apache Airflow](https://www.youtube.com/watch?v=d2K-4Kr-a24). The [slides are here](/slides/ai-plumbing-glasgow-2026.pdf) if you would rather read than watch.
 
 ## What it was about
 
