@@ -1,7 +1,7 @@
 +++
 title = "Setting up a DGX Spark for local LLMs: what it's good at, and where it bit me"
 date = 2026-08-10
-weight = 17
+weight = 3
 authorship = "human-ai"
 +++
 
@@ -41,7 +41,7 @@ The fix was dull and correct. Give each model a right-sized memory budget instea
 
 ## The other honest limits
 
-- **128GB is the ceiling for everything, not spare VRAM.** A model whose raw weights are 136GB simply never fits, unquantized. You live on quantized models (smaller, compressed versions). That is fine, but "128GB" is not "128GB of free room for anything you like."
+- **128GB is the ceiling for everything, not spare VRAM.** A model whose raw weights are 136GiB (about 145GB) simply never fits, unquantized. You live on quantized models (smaller, compressed versions). That is fine, but "128GB" is not "128GB of free room for anything you like."
 - **arm64 bites.** Some software has no build for this processor family. You will hit "there is no image for your architecture" walls that an ordinary x86 machine would never see. Budget time for it.
 - **The chip is new.** It is recent NVIDIA hardware, and some model files trip loader bugs you end up reporting upstream and waiting on. Bleeding edge cuts both ways.
 - **One heavy model at a time.** With vLLM, switching which model is loaded costs real time - a couple of minutes for a small one, closer to ten for the giant.

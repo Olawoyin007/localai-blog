@@ -1,7 +1,7 @@
 +++
 title = "Do you even need a GPU to start?"
 date = 2026-07-19
-weight = 2
+weight = 6
 authorship = "human-ai"
 +++
 

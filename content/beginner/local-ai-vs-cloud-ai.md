@@ -1,8 +1,9 @@
 +++
 title = "Local AI vs cloud AI, and should we even be comparing?"
 date = 2026-07-20
-weight = 18
+weight = 19
 authorship = "human-ai"
+aliases = ["/advanced/local-ai-vs-cloud-ai/"]
 +++
 
 There's a big debate about whether local AI is better than cloud AI. I don't think it should be a debate at all. They both have their pros and cons, and once you see that clearly, the "which is better" question stops making much sense.

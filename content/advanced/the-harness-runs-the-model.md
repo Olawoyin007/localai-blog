@@ -1,7 +1,7 @@
 +++
 title = "The harness: the program that actually runs the model"
 date = 2026-09-20
-weight = 12
+weight = 10
 authorship = "human-ai"
 +++
 

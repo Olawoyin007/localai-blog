@@ -1,7 +1,7 @@
 +++
 title = "One machine, two engines, one pool of memory"
 date = 2026-07-12
-weight = 6
+weight = 4
 authorship = "human-ai"
 +++
 
@@ -45,7 +45,7 @@ That is the lesson that turned me careful: over-filling shared memory is not a m
 
 Here is the part that surprised me most. A small model is not as small as you think.
 
-A model's size on disk is only the weights. Running it, it also needs a scratchpad to hold the conversation so far - and that scratchpad grows with how much text you let it keep in mind (its "context"). Give a small model like **Llama 3.1 8B** (8 billion) a very large context, and its scratchpad alone ballooned to **22GB** on my machine - far more than the weights themselves.
+A model's size on disk is only the weights. Running it, it also needs a scratchpad to hold the conversation so far - and that scratchpad grows with how much text you let it keep in mind (its "context"). Give a small model like **Llama 3.1 8B** (8 billion) a very large context, and the whole thing ballooned to **22GB** on my machine. Under 5GB of that is the weights. The rest is scratchpad.
 
 So the number of tokens you allow a model is not just a quality setting. It is a memory decision. Half my memory planning is really context planning: a big model gets a smaller context so its scratchpad fits, a small model can afford a bigger one.
 

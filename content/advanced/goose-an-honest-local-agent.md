@@ -1,7 +1,7 @@
 +++
 title = "Goose: an honest local agent"
 date = 2026-05-10
-weight = 14
+weight = 16
 authorship = "human-ai"
 +++
 

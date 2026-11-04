@@ -1,7 +1,7 @@
 +++
 title = "The four gates: why a model runs on your machine, or doesn't"
 date = 2026-08-02
-weight = 3
+weight = 2
 authorship = "human-ai"
 +++
 

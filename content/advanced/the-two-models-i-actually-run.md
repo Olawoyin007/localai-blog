@@ -1,7 +1,7 @@
 +++
 title = "The two models I actually run: one to think with, one to work with"
 date = 2026-06-07
-weight = 11
+weight = 9
 authorship = "human-ai"
 +++
 

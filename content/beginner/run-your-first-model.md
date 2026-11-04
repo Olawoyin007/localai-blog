@@ -1,7 +1,7 @@
 +++
 title = "Run your first model, step by step"
 date = 2026-07-05
-weight = 5
+weight = 8
 authorship = "human-ai"
 +++
 
