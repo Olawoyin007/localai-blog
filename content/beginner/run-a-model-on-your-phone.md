@@ -5,7 +5,7 @@ weight = 22
 authorship = "human-ai"
 +++
 
-The same small promise as running one on a laptop, but smaller and stranger: the phone in your pocket can run its own AI. No account, no internet once it's downloaded, nothing sent anywhere. In a few minutes, and a few taps.
+The same small promise as running one on a laptop, but smaller and stranger: the phone in your pocket can run its own AI. No account, no internet once it's downloaded, and nothing you type leaves the phone. In a few minutes, and a few taps.
 
 If running a model on a computer felt surprising, running one on a phone feels almost silly. Let's do it.
 
