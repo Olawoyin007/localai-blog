@@ -37,6 +37,8 @@ Three models, measured on my box, forcing exactly 300 tokens of output each time
 
 The smallest model is the fastest and the largest is in the middle, and the ordering follows the third column exactly.
 
+{{< fig src="/image/posts/bytes-per-token.svg" class="diagram" alt="Bytes read per token for three models, with measured speed alongside: 29 GB at 7.8 tok/s, about 15 GB at 13-25, about 2 GB at 42." caption="Bars are bytes read per token. The speed on the right rises as the bar shrinks." >}}
+
 ## Checking the rule against the slow one
 
 The dense 27B is the clean test, because dense models read everything and there is nothing to estimate:
