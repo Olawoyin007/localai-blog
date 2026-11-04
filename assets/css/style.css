@@ -254,3 +254,25 @@ a { color: var(--link); }
 .foot-mission { color: var(--muted); }
 .foot-tally { color: var(--accent-ink); }
 .site-foot a { color: var(--muted); }
+
+/* --- Figures -------------------------------------------------------------
+   Images are evidence here, not decoration: a graph, a photo of the box,
+   a diagram. One hairline, one quiet caption, nothing that moves.          */
+.post figure.fig { margin: 2rem 0; }
+.post figure.fig img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: var(--bg);
+}
+.post figure.fig figcaption {
+  margin-top: .6rem;
+  font-family: var(--sans);
+  font-size: .85rem;
+  line-height: 1.5;
+  color: var(--muted);
+}
+/* Diagrams are drawn flat - no frame, they are already part of the page. */
+.post figure.fig.diagram img { border: none; background: none; }

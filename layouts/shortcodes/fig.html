@@ -1,0 +1,7 @@
+{{- /* Evidence, not decoration. Plain <figure>, no JS, no lightbox. */ -}}
+<figure class="fig{{ with .Get "class" }} {{ . }}{{ end }}">
+  <img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}" loading="lazy">
+  {{- with .Get "caption" }}
+  <figcaption>{{ . | markdownify }}</figcaption>
+  {{- end }}
+</figure>
