@@ -1,6 +1,7 @@
 +++
 title = "The two knobs: one is free, one can reboot your box"
-date = 2026-11-04
+date = 2026-10-26
+description = "One setting reserves memory up front, the other rations it. Raising the wrong one is free; raising the other can reboot the box."
 weight = 14
 authorship = "human-ai"
 +++
@@ -66,7 +67,7 @@ Match the knob to what is actually in your way:
 
 **Conversations hitting the length wall, concurrency nowhere near the limit?** Raise the cap. It is free. This was my case and I could have done it months earlier.
 
-**Need more simultaneous users, or the pool genuinely cannot hold one full-length conversation?** Now you have to grow the pool, which means raising the memory fraction, and that one does cost. On a machine where everything shares one pool of memory, over-reserving does not fail politely. Mine hard-rebooted at 0.85.
+**Need more simultaneous users, or the pool genuinely cannot hold one full-length conversation?** Now you have to grow the pool, which means raising the memory fraction, and that one does cost. On a machine where [everything shares one pool of memory]({{< relref "one-machine-two-engines" >}}), over-reserving does not fail politely. Mine hard-rebooted at 0.85.
 
 So nudge that one. Leave headroom. The rule I kept for myself: **if it could run at 90 percent, give it 80.**
 

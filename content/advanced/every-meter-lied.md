@@ -1,6 +1,7 @@
 +++
 title = "Every meter lied: measuring what a model actually costs"
-date = 2026-11-04
+date = 2026-10-07
+description = "Every tool that reports memory on this box was wrong, one of them by a factor of three. The only honest meter is a before and after."
 weight = 7
 authorship = "human-ai"
 +++
@@ -34,7 +35,7 @@ It works for a dull reason. `MemAvailable` is the kernel's own estimate of what 
 
 About 20% low on the small model. **More than double on the 27B.** And because the error is not a consistent percentage, you cannot learn a correction factor and apply it. The number is not slightly off, it is not a measurement of what you think it is.
 
-`ollama ps` will tell you reliably which models are loaded. That is all I use it for now.
+`ollama ps` will tell you reliably which models are loaded. That is all I use it for now. It matters because [what a model costs]({{< relref "what-a-model-costs" >}}) is mostly its context, and that is the part being under-reported.
 
 ## The kernel's own report points at the wrong column
 

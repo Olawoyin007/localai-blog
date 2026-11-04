@@ -1,13 +1,14 @@
 +++
 title = "Fewer bits is faster: what quantization buys, and what it costs"
-date = 2026-11-04
+date = 2026-09-27
+description = "Quantization is sold as a way to fit a model in. On a bandwidth-limited box it is also the main speed control, and its quality cost lands somewhere surprising."
 weight = 11
 authorship = "human-ai"
 +++
 
 Quantization is almost always explained as a way to make a model fit. Store each weight in fewer bits, the file gets smaller, it squeezes onto your machine. True, and it is only half of what it does.
 
-On a box where speed is set by how many bytes get read for every token, storing fewer bits means reading fewer bytes. So the thing sold to you as a memory saving is also, quietly, the main speed control you have.
+On a box where [speed is set by how many bytes get read for every token]({{< relref "bytes-per-token" >}}), storing fewer bits means reading fewer bytes. So the thing sold to you as a memory saving is also, quietly, the main speed control you have.
 
 If you take one thing from this post: **on a bandwidth-limited machine, quantization is a speed setting. And the quality it costs you does not land where you would guess.**
 

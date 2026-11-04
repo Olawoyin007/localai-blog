@@ -1,6 +1,7 @@
 +++
 title = "What a model actually costs: the context, not the weights"
-date = 2026-11-04
+date = 2026-10-04
+description = "A 4.4GB model asked for 21GB and took the machine down. The weights were never the problem."
 weight = 2
 authorship = "human-ai"
 +++
@@ -22,7 +23,7 @@ memory breakdown [MiB] | total  free  | self = model + context + compute |
 
 Read the right-hand bracket. **4,403 MiB is the weights. 16,384 MiB is the cache for the conversation.** The cache is nearly four times the model.
 
-It needed 21,023 MiB. There were 19,647 free, because something else was holding the rest. So it died.
+It needed 21,023 MiB. There were 19,647 free, because something else was holding the rest. So it died. On a machine where [everything shares one pool]({{< relref "one-machine-two-engines" >}}), that is not a model crashing.
 
 {{< fig src="/image/posts/weights-vs-cache.svg" class="diagram" alt="A stacked bar: 4.4 GB of weights, 16 GB of context cache, totalling 21 GB, overshooting a marked line at 19.6 GB free." caption="The small block on the left is the model. The rest is room it reserved for a conversation nobody was going to have." >}}
 

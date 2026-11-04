@@ -1,6 +1,7 @@
 +++
 title = "Bytes per token: why my 122B model is faster than my 27B"
-date = 2026-11-04
+date = 2026-09-23
+description = "Why a 122B model can answer faster than a 27B on the same machine, and the one line of arithmetic that predicts it."
 weight = 4
 authorship = "human-ai"
 +++
@@ -25,7 +26,7 @@ My box reads memory at 273 GB/s. That figure is fixed in the hardware and nothin
 
 Here is the part that breaks the intuition. A **dense** model reads every single weight it has, for every token. A **mixture-of-experts** model holds a lot of weights but only reads the few it picks each time.
 
-So the size on disk tells you what has to *fit*. It does not tell you what has to be *read*. Those are different questions, and only the second one sets speed.
+So the size on disk tells you what has to *fit*. It does not tell you what has to be *read*. Those are different questions, and only the second one sets speed. (What has to fit is its own trap, and mostly [not the weights]({{< relref "what-a-model-costs" >}}).)
 
 Three models, measured on my box, forcing exactly 300 tokens of output each time:
 
@@ -124,5 +125,7 @@ You do not need a 122-billion model, or this box, for any of this to apply. The 
 - **For dense models, predict before you download.** Bandwidth divided by file size, times about 0.83.
 - **For sparse models, predict a range and then measure.** The active-parameter number will lie to you.
 - **If a result repeats to the decimal, stop tuning.** That is the hardware talking.
+
+There is a second half to this, because storing a model in fewer bits means reading fewer bytes, which makes [quantization a speed setting]({{< relref "fewer-bits-is-faster" >}}) and not only a way to fit.
 
 I spent real hours looking for a setting that would speed up that 27B. There was never one to find. The honest version of fast, on a machine like this, is choosing a model that reads less.

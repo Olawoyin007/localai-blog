@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" role="img"
+     aria-label="A loop with four steps, all inside a box labelled harness. Step one, the harness holds the conversation and picks what to show. Step two, the model takes text in and gives text out, then forgets. Step three, the harness reads the reply and runs the command. Step four, the harness pastes the result back in, and the loop repeats.">
+  <style>
+    .out { fill: none; stroke: #22333a; stroke-width: 1.5; }
+    .bx  { fill: none; stroke: #44595e; stroke-width: 1; }
+    .mdl { fill: #38cfc6; }
+    .t   { font: 12px ui-monospace, Menlo, Consolas, monospace; fill: #93a7ab; }
+    .td  { font: 12px ui-monospace, Menlo, Consolas, monospace; fill: #0c1317; }
+    .tds { font: 10px ui-monospace, Menlo, Consolas, monospace; fill: #0c1317; }
+    .hd  { font: 12px system-ui, sans-serif; fill: #38cfc6; }
+    .ar  { stroke: #44595e; stroke-width: 1.5; fill: none; }
+    .cap { font: 11px system-ui, sans-serif; fill: #6a7d81; }
+  </style>
+
+  <rect class="out" x="20" y="42" width="600" height="212" rx="6"/>
+  <text class="hd" x="34" y="34">harness</text>
+
+  <rect class="bx" x="50" y="72" width="210" height="52" rx="3"/>
+  <text class="t" x="64" y="96">holds the conversation,</text>
+  <text class="t" x="64" y="113">picks what to show</text>
+
+  <rect class="mdl" x="420" y="72" width="160" height="52" rx="3"/>
+  <text class="td"  x="434" y="94">model</text>
+  <text class="tds" x="434" y="112">text in, text out, forgets</text>
+
+  <rect class="bx" x="420" y="172" width="160" height="52" rx="3"/>
+  <text class="t" x="434" y="196">reads the reply,</text>
+  <text class="t" x="434" y="213">runs the command</text>
+
+  <rect class="bx" x="50" y="172" width="210" height="52" rx="3"/>
+  <text class="t" x="64" y="196">pastes the result back,</text>
+  <text class="t" x="64" y="213">asks the next question</text>
+
+  <line class="ar" x1="260" y1="98" x2="414" y2="98"/>
+  <path class="ar" d="M408 93 L415 98 L408 103"/>
+  <line class="ar" x1="500" y1="124" x2="500" y2="166"/>
+  <path class="ar" d="M495 160 L500 167 L505 160"/>
+  <line class="ar" x1="414" y1="198" x2="266" y2="198"/>
+  <path class="ar" d="M272 193 L265 198 L272 203"/>
+  <line class="ar" x1="155" y1="172" x2="155" y2="130"/>
+  <path class="ar" d="M150 136 L155 129 L160 136"/>
+
+  <text class="cap" x="20" y="286">Three of the four steps are the harness. The model does one thing, once, then forgets you.</text>
+  <text class="cap" x="20" y="304">Swap the surrounding box and the same model file becomes a different tool.</text>
+</svg>

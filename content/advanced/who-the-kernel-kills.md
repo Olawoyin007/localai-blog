@@ -1,6 +1,7 @@
 +++
 title = "Who the kernel kills: my login died, the 20GB model survived"
-date = 2026-11-04
+date = 2026-10-10
+description = "The machine ran out of memory three times. Each time it killed my login session and kept the 20GB model that caused it."
 weight = 9
 authorship = "human-ai"
 +++
@@ -19,7 +20,7 @@ No memory warning reached me. Nothing said "out of memory". The visible failure 
 
 ## The scoreboard nobody shows you
 
-The kernel scores every process for how attractive it is to kill. Higher score, killed sooner. I went and read the actual numbers on my box:
+The kernel scores every process for how attractive it is to kill. Higher score, killed sooner. I went and read the actual numbers on my box, which took [some care]({{< relref "every-meter-lied" >}}), because the table it prints is easy to misread:
 
 | Process | score |
 |---|---|

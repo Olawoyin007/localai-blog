@@ -21,6 +21,8 @@ The harness is the program sitting around the model, doing all the parts the mod
 
 Picture a brilliant person with no hands and no short-term memory. They can think and talk, and nothing else. The harness is the assistant sitting next to them - keeping the notes, doing what they ask, handing them what they need, then asking the next question. Take the assistant away and the genius says one clever thing and forgets you exist.
 
+{{< fig src="/image/posts/harness-loop.svg" class="diagram" alt="A four-step loop inside a box labelled harness. Only one of the four steps is the model." caption="Three of the four steps belong to the harness." >}}
+
 ## Same model, different harness, different tool
 
 This is the part that catches people out. Drop the very same model into two different harnesses and it behaves like two different tools.
