@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 290" role="img"
+     aria-label="Grouped bar chart comparing 16-bit and 4-bit accuracy on two benchmarks. GPQA-Diamond goes from 88.38 percent to 88.69 percent, essentially unchanged. AIME 2026 falls from 98.67 percent to 84.00 percent.">
+  <style>
+    .val  { font: 12px ui-monospace, Menlo, Consolas, monospace; fill: #e7eff0; text-anchor: middle; }
+    .name { font: 13px ui-monospace, Menlo, Consolas, monospace; fill: #e7eff0; text-anchor: middle; }
+    .sub  { font: 11px system-ui, sans-serif; fill: #93a7ab; text-anchor: middle; }
+    .key  { font: 11px system-ui, sans-serif; fill: #93a7ab; }
+    .cap  { font: 11px system-ui, sans-serif; fill: #6a7d81; }
+    .full { fill: #44595e; }
+    .quad { fill: #38cfc6; }
+    .base { stroke: #22333a; stroke-width: 1; }
+  </style>
+
+  <rect class="full" x="0"  y="8"  width="11" height="11" rx="2"/>
+  <text class="key"  x="18" y="18">16 bits</text>
+  <rect class="quad" x="78" y="8"  width="11" height="11" rx="2"/>
+  <text class="key"  x="96" y="18">4 bits</text>
+
+  <!-- GPQA-Diamond: 88.38 -> 88.69 -->
+  <rect class="full" x="140" y="61" width="60" height="159" rx="2"/>
+  <rect class="quad" x="216" y="60" width="60" height="160" rx="2"/>
+  <text class="val"  x="170" y="53">88.38</text>
+  <text class="val"  x="246" y="52">88.69</text>
+  <text class="name" x="208" y="244">GPQA-Diamond</text>
+  <text class="sub"  x="208" y="260">graduate reasoning</text>
+
+  <!-- AIME 2026: 98.67 -> 84.00 -->
+  <rect class="full" x="400" y="42" width="60" height="178" rx="2"/>
+  <rect class="quad" x="476" y="69" width="60" height="151" rx="2"/>
+  <text class="val"  x="430" y="34">98.67</text>
+  <text class="val"  x="506" y="61">84.00</text>
+  <text class="name" x="468" y="244">AIME 2026</text>
+  <text class="sub"  x="468" y="260">competition maths</text>
+
+  <line class="base" x1="120" y1="220" x2="560" y2="220"/>
+  <text class="cap"  x="120" y="283">Both benchmarks are hard. Only one of them depends on every step before it.</text>
+</svg>
