@@ -83,6 +83,10 @@ Note which column survived. The memory figures repeat across all four runs to wi
 
 It changes the answer. I asked the same question at each precision, temperature zero, same seed, and the responses diverge from the second paragraph onward. So no, this is not invisible.
 
+And it is not only the cache. I assumed flash attention would be output-neutral, because it is usually described as mathematically equivalent, which it is in exact arithmetic. It is not bit-identical in floating point: the accumulation happens in a different order, and those tiny differences compound token by token. With flash attention as the only change, same seed, same temperature, the answer diverged halfway through the first sentence.
+
+So both of these settings move what the model says. If you are running anything whose output you compare across time, a scored evaluation, a regression test, a benchmark you keep, then **these are not a tidy-up. They are a version change**, and the honest way to adopt them is to bump whatever identifies your run and measure both sides.
+
 Whether it is *worse* is a harder question than a couple of prompts can settle. I asked for two things: a time calculation, and the first eight prime numbers.
 
 The primes came back identical and correct at every precision. The arithmetic was wrong at every precision, and wrong differently each time. At full precision it added fifty minutes to 17:05 and decided that made 18:05. At 4-bit it converted three hours fifty minutes into two hundred minutes, which it is not, and got 17:25. The right answer is 17:55 and nothing produced it.
