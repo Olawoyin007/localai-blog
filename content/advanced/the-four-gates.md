@@ -13,7 +13,9 @@ Here they are, in the order you hit them. They apply whether you are on a phone 
 
 ## Gate 1 - Does it fit?
 
-Every model has to fit in your memory to run at all. The rough maths is one honest line: the model's size in billions, times about half a gigabyte per billion (at a normal quality setting), is roughly the memory it needs.
+Every model has to fit in your memory to run at all. The rough maths is one honest line: the model's size in billions, times about half a gigabyte per billion, is roughly what the weights need at a normal quality setting, which means somewhere around four bits per weight.
+
+Two things that line does not include. A higher quality setting is a bigger file, sometimes double. And the weights are only part of the bill: the conversation needs room too, and on a large machine that can be [several times the size of the model]({{< relref "what-a-model-costs" >}}). Gate 1 is a floor, not a budget.
 
 I wanted to run **DeepSeek V4 Flash** (284 billion) after a wave of excited posts about it. One line of that maths said it needed far more memory than *my machine* has. Note the emphasis: there is nothing wrong with the model. It is simply bigger than my memory, and no amount of trying changes that. It never even got downloaded. The only way to "fit" it was to shrink it so hard it got dumber than a smaller model I could already run well.
 

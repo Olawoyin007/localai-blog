@@ -14,7 +14,9 @@ If you take one thing from this post: **the question is the same at every size. 
 
 ## The question
 
-Every machine that runs a model is answering one thing: is there room for this. A rough version of the maths works everywhere. Take the model's size in billions, multiply by about half a gigabyte, and that is roughly what it needs at a normal quality setting. A 7-billion model wants somewhere near 4GB.
+Every machine that runs a model is answering one thing: is there room for this. A rough version of the maths works everywhere. Take the model's size in billions, multiply by about half a gigabyte, and that is roughly what the *weights* need at a normal quality setting. A 7-billion model wants somewhere near 4GB.
+
+That is a floor rather than a total. The conversation needs room on top, and the better quality settings are bigger files. But as a first check, before you download anything, it is the number that tells you whether to bother.
 
 That arithmetic does not change between a phone and a server. What changes is **where** that room has to come from, and what the machine does when it runs out.
 
@@ -55,7 +57,7 @@ Each step up adds one thing to check. None of the earlier things stop being true
 ---
 
 - **Start where you are.** A phone running a 1-billion model is doing the real thing, not a toy version of it.
-- **Learn the one piece of arithmetic.** Billions times roughly half a gigabyte. It travels all the way up.
+- **Learn the one piece of arithmetic.** Billions times roughly half a gigabyte, for the weights. It travels all the way up, and it is always a floor rather than the full bill.
 - **Find out whether your machine has one pool of memory or two.** It changes everything else.
 - **Expect the failures to get more expensive as the machine gets bigger**, not less.
 
