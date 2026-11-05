@@ -37,6 +37,11 @@ Some posts are written by me. Others are made together with AI. I label them so 
 - **Organic** - written by a human.
 - **Human + AI** - made together.
 
+Since the label only means something if you know what it covers: the measurements, the
+experiments, the things that broke and the conclusions are always mine. I run them on my own
+machines and write the findings down. Where a post is labelled Human + AI, the help was in
+turning those notes into something readable. No post here reports a number I did not measure.
+
 I like simple things and useful technology. This site is just a place to share what I learn.
 
 ## Find me

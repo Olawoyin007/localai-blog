@@ -3,6 +3,9 @@ locale = "en"
 title = "Local AI, Simply"
 defaultContentLanguage = "en"
 
+# Let crawlers find the sitemap.
+enableRobotsTXT = true
+
 # We don't use Hugo's built-in tags/categories - keeps the site quiet.
 # The authorship "sticker" is a simple per-post field, not a taxonomy.
 [taxonomies]
