@@ -2,7 +2,7 @@
 title = "Fewer bits is faster: what quantization buys, and what it costs"
 date = 2026-09-27
 description = "Quantization is sold as a way to fit a model in. On a bandwidth-limited box it is also the main speed control, and its quality cost lands somewhere surprising."
-weight = 12
+weight = 13
 authorship = "human-ai"
 +++
 

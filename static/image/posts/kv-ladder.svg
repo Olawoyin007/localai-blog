@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 250" role="img"
+     aria-label="Four bars showing memory held by the same model. Flash attention off with an f16 cache holds 11.9 GB. Flash attention on holds 9.6. With an 8-bit cache, 7.7. With a 4-bit cache, 6.9. Throughput stays at about 44 tokens per second throughout.">
+  <style>
+    .l   { font: 12px ui-monospace, Menlo, Consolas, monospace; fill: #93a7ab; }
+    .v   { font: 12px ui-monospace, Menlo, Consolas, monospace; fill: #e7eff0; }
+    .t   { font: 11px ui-monospace, Menlo, Consolas, monospace; fill: #6a7d81; text-anchor: end; }
+    .hd  { font: 11px system-ui, sans-serif; fill: #6a7d81; }
+    .b   { fill: #38cfc6; }
+    .cap { font: 11px system-ui, sans-serif; fill: #6a7d81; }
+  </style>
+  <text class="hd" x="188" y="22">memory held</text>
+  <text class="hd" x="640" y="22" text-anchor="end">throughput</text>
+
+  <text class="l" x="0"   y="52">flash off, f16</text>
+  <rect class="b" x="188" y="38" width="340" height="20" rx="2"/>
+  <text class="v" x="536" y="53">11.9 GB</text>
+  <text class="t" x="640" y="53">44 tok/s</text>
+
+  <text class="l" x="0"   y="92">flash on, f16</text>
+  <rect class="b" x="188" y="78" width="274" height="20" rx="2"/>
+  <text class="v" x="470" y="93">9.6 GB</text>
+  <text class="t" x="640" y="93">44 tok/s</text>
+
+  <text class="l" x="0"   y="132">flash on, q8_0</text>
+  <rect class="b" x="188" y="118" width="220" height="20" rx="2"/>
+  <text class="v" x="416" y="133">7.7 GB</text>
+  <text class="t" x="640" y="133">44 tok/s</text>
+
+  <text class="l" x="0"   y="172">flash on, q4_0</text>
+  <rect class="b" x="188" y="158" width="197" height="20" rx="2"/>
+  <text class="v" x="393" y="173">6.9 GB</text>
+  <text class="t" x="640" y="173">44 tok/s</text>
+
+  <text class="cap" x="0" y="212">Same model, same 32,768 context. The first two steps are worth taking.</text>
+  <text class="cap" x="0" y="230">The fourth bar saves 0.8 GB and is the only one that changes the answers.</text>
+</svg>

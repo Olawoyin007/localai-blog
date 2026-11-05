@@ -1,7 +1,7 @@
 +++
 title = "Does the machine exist to serve humanity, or the other way round?"
 date = 2026-07-12
-weight = 29
+weight = 30
 authorship = "human-ai"
 aliases = ["/advanced/machine-serve-humanity/"]
 +++

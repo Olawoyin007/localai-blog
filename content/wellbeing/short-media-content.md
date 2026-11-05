@@ -1,7 +1,7 @@
 +++
 title = "Short media content"
 date = 2026-06-21
-weight = 26
+weight = 27
 authorship = "organic"
 +++
 

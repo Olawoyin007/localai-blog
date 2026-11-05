@@ -1,7 +1,7 @@
 +++
 title = "Gateway, MCP, evals: three jobs people keep mixing up"
 date = 2026-08-30
-weight = 20
+weight = 21
 authorship = "human-ai"
 +++
 

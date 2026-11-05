@@ -1,7 +1,7 @@
 +++
 title = "Local AI vs cloud AI, and should we even be comparing?"
 date = 2026-07-20
-weight = 27
+weight = 28
 authorship = "human-ai"
 aliases = ["/advanced/local-ai-vs-cloud-ai/"]
 +++

@@ -1,7 +1,7 @@
 +++
 title = "One machine, two engines, one pool of memory"
 date = 2026-07-12
-weight = 9
+weight = 10
 authorship = "human-ai"
 +++
 

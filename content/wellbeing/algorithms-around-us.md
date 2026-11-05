@@ -1,7 +1,7 @@
 +++
 title = "A healthier relationship with the algorithms around us"
 date = 2026-07-27
-weight = 19
+weight = 20
 authorship = "human-ai"
 +++
 

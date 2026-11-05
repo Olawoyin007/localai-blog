@@ -2,7 +2,7 @@
 title = "Who the kernel kills: my login died, the 20GB model survived"
 date = 2026-10-10
 description = "The machine ran out of memory three times. Each time it killed my login session and kept the 20GB model that caused it."
-weight = 10
+weight = 11
 authorship = "human-ai"
 +++
 
