@@ -1,11 +1,11 @@
 +++
-title = "Odysseus: a private AI workspace on my own box"
+title = "Running Odysseus on my own box"
 date = 2026-05-03
 weight = 29
 authorship = "human-ai"
 +++
 
-Everything else on this site has been plumbing - engines, memory, gateways, agents. Useful, but it all lives in a terminal. [Odysseus](https://github.com/odysseus-dev/odysseus) is the friendly face I put on top of it: a self-hosted AI workspace, the local-first version of the ChatGPT or Claude window you already know - running on my own hardware, on my own data.
+Everything else on this site has been plumbing - engines, memory, gateways, agents. Useful, but it all lives in a terminal. [Odysseus](https://github.com/odysseus-dev/odysseus) is the friendly face I put on top of it. To be clear about what is mine: I did not build Odysseus. It is someone else's open-source project and I am a user of it. What is mine is the stack underneath and the running of it - a self-hosted AI workspace, the local-first version of the ChatGPT or Claude window you already know, on my own hardware and my own data.
 
 This is the piece that turns "I run models in a terminal" into "I have a private AI I can actually use, from my phone."
 
