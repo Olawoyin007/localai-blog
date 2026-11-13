@@ -2,6 +2,7 @@
 title = "Setting up a DGX Spark for local LLMs: what it's good at, and where it bit me"
 date = 2026-08-10
 weight = 5
+description = "128GB of memory shared between processor and GPU is why a 100B model runs on a box the size of a small book. It is also how one setting put it in a reboot loop."
 authorship = "human-ai"
 +++
 

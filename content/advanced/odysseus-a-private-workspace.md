@@ -2,6 +2,7 @@
 title = "Running Odysseus on my own box"
 date = 2026-05-03
 weight = 29
+description = "Someone else's open-source workspace, running on my stack, so the models I serve from a terminal become a private chat I can open on my phone."
 authorship = "human-ai"
 +++
 

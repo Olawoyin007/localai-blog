@@ -2,6 +2,7 @@
 title = "Does the machine exist to serve humanity, or the other way round?"
 date = 2026-07-12
 weight = 30
+description = "A scene from Gintama, where a robot walks into a weapon knowing she will not come back, and why it settled a question for me."
 authorship = "human-ai"
 aliases = ["/advanced/machine-serve-humanity/"]
 +++

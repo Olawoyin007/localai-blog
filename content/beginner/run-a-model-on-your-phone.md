@@ -2,6 +2,7 @@
 title = "Run a model on your phone"
 date = 2026-06-14
 weight = 24
+description = "A free app, a small model, and a chat that keeps answering in airplane mode. Proof that the AI is on the phone itself and nowhere else."
 authorship = "human-ai"
 +++
 

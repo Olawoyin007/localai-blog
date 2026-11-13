@@ -2,6 +2,7 @@
 title = "I build restraint open source AI systems: what they are, their limits, and their point"
 date = 2026-08-03
 weight = 12
+description = "Two open-source tools built to hold back on purpose: an assistant that steps away from sensitive ground, and a filter that flags posts trying to work you. Neither is a wall."
 authorship = "human-ai"
 +++
 

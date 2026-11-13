@@ -2,6 +2,7 @@
 title = "Moving a whole stack to a new machine"
 date = 2026-04-26
 weight = 26
+description = "Models can be downloaded again; your data cannot. What moving a whole running stack taught me about order, backups, and counting the rows after a restore."
 authorship = "human-ai"
 +++
 

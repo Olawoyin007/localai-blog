@@ -2,6 +2,7 @@
 title = "The two models I actually run: one to think with, one to work with"
 date = 2026-06-07
 weight = 18
+description = "One model to think with and one to hand tasks to. The second one thought for 26 seconds and did nothing, and the fix was a single flag."
 authorship = "human-ai"
 +++
 

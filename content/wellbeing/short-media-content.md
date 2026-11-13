@@ -2,6 +2,7 @@
 title = "Short media content"
 date = 2026-06-21
 weight = 27
+description = "One clip becomes ten, and willpower runs out. A timer does the remembering for me, and some days I push past it anyway."
 authorship = "organic"
 +++
 

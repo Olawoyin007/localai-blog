@@ -2,6 +2,7 @@
 title = "Do you even need a GPU to start?"
 date = 2026-07-19
 weight = 6
+description = "No. The real limit is memory, not the graphics card, and the laptop or phone you already own has enough to run a small model today."
 authorship = "human-ai"
 +++
 

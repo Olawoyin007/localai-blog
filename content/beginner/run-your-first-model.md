@@ -2,6 +2,7 @@
 title = "Run your first model, step by step"
 date = 2026-07-05
 weight = 15
+description = "One free program and one command, and a real language model is answering you on your own computer. The only slow part is the download."
 authorship = "human-ai"
 +++
 

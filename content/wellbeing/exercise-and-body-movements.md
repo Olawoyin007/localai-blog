@@ -2,6 +2,7 @@
 title = "Exercise and body movements"
 date = 2026-05-17
 weight = 31
+description = "Stand up once an hour, walk without the phone, move in a way you enjoy. No gym and no plan, just a little, often."
 authorship = "organic"
 +++
 

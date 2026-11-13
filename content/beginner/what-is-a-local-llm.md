@@ -2,6 +2,7 @@
 title = "What is a local LLM, in plain words"
 date = 2026-08-09
 weight = 1
+description = "A local AI runs on your own computer instead of someone else's servers. Your words stay in the room, nothing meters you by the message, and it keeps working with the wifi off."
 authorship = "human-ai"
 +++
 

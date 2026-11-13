@@ -2,6 +2,7 @@
 title = "Gateway, MCP, evals: three jobs people keep mixing up"
 date = 2026-08-30
 weight = 21
+description = "The gateway picks which model answers, MCP decides what it can reach, and evals say whether the answer was any good. Doing one says nothing about the other two."
 authorship = "human-ai"
 +++
 

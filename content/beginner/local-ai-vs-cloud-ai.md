@@ -2,6 +2,7 @@
 title = "Local AI vs cloud AI, and should we even be comparing?"
 date = 2026-07-20
 weight = 28
+description = "Local gives you privacy and ownership, cloud gives you the biggest models. I use both, and the one line I hold is that sensitive things stay at home."
 authorship = "human-ai"
 aliases = ["/advanced/local-ai-vs-cloud-ai/"]
 +++

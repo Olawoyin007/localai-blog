@@ -2,6 +2,7 @@
 title = "One door to all your models: LiteLLM"
 date = 2026-05-31
 weight = 23
+description = "One address in front of Ollama, vLLM and any cloud key, so every tool stops caring where a model lives. The list it advertises is a promise, not a fact."
 authorship = "human-ai"
 +++
 

@@ -2,6 +2,7 @@
 title = "Goose: an honest local agent"
 date = 2026-05-10
 weight = 25
+description = "An open-source agent running on my own models, with my files staying on my machine. Slower and rougher than the cloud ones, and good enough for private work."
 authorship = "human-ai"
 +++
 

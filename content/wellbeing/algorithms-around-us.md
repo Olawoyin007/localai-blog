@@ -2,6 +2,7 @@
 title = "A healthier relationship with the algorithms around us"
 date = 2026-07-27
 weight = 20
+description = "You will not out-muscle the algorithm. What you can do is add a little friction, feed it on purpose, and choose calm over the trigger."
 authorship = "human-ai"
 +++
 

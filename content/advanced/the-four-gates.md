@@ -2,6 +2,7 @@
 title = "The four gates: why a model runs on your machine, or doesn't"
 date = 2026-08-02
 weight = 3
+description = "Fitting in memory is only the first of four checks a model has to pass on your machine. Four models of mine each fell at a different one."
 authorship = "human-ai"
 +++
 

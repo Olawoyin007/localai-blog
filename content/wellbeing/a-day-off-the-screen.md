@@ -2,6 +2,7 @@
 title = "A day off the screen"
 date = 2026-08-18
 weight = 32
+description = "One day a week with the screens mostly off. Some silence, some breathing, and a walk in a calm park if there is one near."
 authorship = "organic"
 +++
 

@@ -2,6 +2,7 @@
 title = "One machine, two engines, one pool of memory"
 date = 2026-07-12
 weight = 10
+description = "Ollama grabs memory when it likes; vLLM grabs its whole budget up front. The day they both reached into the same pool, the whole box rebooted."
 authorship = "human-ai"
 +++
 

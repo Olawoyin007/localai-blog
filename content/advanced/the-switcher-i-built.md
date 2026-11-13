@@ -2,6 +2,7 @@
 title = "The switcher I built: a seatbelt for one shared box"
 date = 2026-07-19
 weight = 16
+description = "About a hundred lines of shell that check free memory before loading a model and refuse if it will not fit. Written the day after the crash."
 authorship = "human-ai"
 +++
 

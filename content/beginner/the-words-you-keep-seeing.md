@@ -2,6 +2,7 @@
 title = "The words you keep seeing, in plain English"
 date = 2026-05-24
 weight = 22
+description = "Tokens, weights, quantization, AWQ4, GGUF. The words on every model page, explained once in plain English so they stop being a wall."
 authorship = "human-ai"
 +++
 

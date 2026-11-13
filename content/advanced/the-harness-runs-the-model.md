@@ -2,6 +2,7 @@
 title = "The harness: the program that actually runs the model"
 date = 2026-09-20
 weight = 19
+description = "A model answers once and forgets you. The conversation, the tools and the loop all belong to the program wrapped around it, and that program decides what the model can do."
 authorship = "human-ai"
 +++
 
