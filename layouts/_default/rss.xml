@@ -1,0 +1,36 @@
+{{- /* The feed. Hugo's built-in one sends only the first lines of each post; this one
+       sends the whole post, so a feed reader is a complete way to read the site.
+       Newest first. Links and images inside a post are made absolute, because a feed
+       reader has no idea what "/image/..." is relative to. */ -}}
+{{- $pages := slice -}}
+{{- if .IsHome -}}
+  {{- $pages = where .Site.RegularPages "Type" "in" (slice "beginner" "advanced" "wellbeing") -}}
+{{- else -}}
+  {{- $pages = .RegularPages -}}
+{{- end -}}
+{{- $pages = $pages.ByDate.Reverse -}}
+{{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>{{ if .IsHome }}{{ .Site.Title }}{{ else }}{{ .Title }} &#183; {{ .Site.Title }}{{ end }}</title>
+    <link>{{ .Permalink }}</link>
+    <description>{{ .Site.Params.description }}</description>
+    <language>{{ .Site.Language.Lang }}</language>
+    {{- with $pages }}
+    <lastBuildDate>{{ (index . 0).Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</lastBuildDate>
+    {{- end }}
+    {{- with .OutputFormats.Get "rss" }}
+    <atom:link href="{{ .Permalink }}" rel="self" type="application/rss+xml" />
+    {{- end }}
+    {{- range $pages }}
+    <item>
+      <title>{{ .Title }}</title>
+      <link>{{ .Permalink }}</link>
+      <pubDate>{{ .Date.Format "Mon, 02 Jan 2006 15:04:05 -0700" }}</pubDate>
+      <guid>{{ .Permalink }}</guid>
+      <description>{{ with .Description }}{{ . }}{{ else }}{{ .Summary | plainify | chomp }}{{ end }}</description>
+      <content:encoded>{{ .Content | replaceRE `(href|src)="/` (printf `$1="%s` .Site.BaseURL) | transform.XMLEscape | safeHTML }}</content:encoded>
+    </item>
+    {{- end }}
+  </channel>
+</rss>

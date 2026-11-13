@@ -1,0 +1,10 @@
+{{/* The page a reader lands on when a link is dead. Hugo builds it as /404.html;
+     Caddy has to be told to serve it for missing paths (see README). Quiet on
+     purpose: say what happened, offer two ways on, nothing else. */}}
+{{ define "main" }}
+<section class="hero">
+  <h1>That page is not here</h1>
+  <p>The link may be old, or mistyped. Nothing is wrong on your side.</p>
+  <p><a href="/">Back to the front page</a> &middot; <a href="/search/">Search the posts</a></p>
+</section>
+{{ end }}

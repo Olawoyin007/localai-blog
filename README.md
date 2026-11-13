@@ -91,6 +91,16 @@ There is no manual deploy. The live site follows GitHub.
 
 (`public/` is git-ignored on purpose - git tracks your writing, the server builds the HTML.)
 
+Caddy needs one block in its config so a dead link shows the 404 page instead of a blank one:
+
+```
+handle_errors {
+    @notfound expression {http.error.status_code} == 404
+    rewrite @notfound /404.html
+    file_server
+}
+```
+
 ---
 
 ## What each thing is (so nothing is a mystery)
@@ -101,10 +111,12 @@ content/            your writing (one .md file per post)
   about.md          your About page
   search.md         the search page (empty - it just triggers the layout)
 layouts/            the HTML templates (all commented)
-  _default/         baseof (page shell), single (a post), list (a section), search
+  _default/         baseof (page shell), single (a post), list (a section), search,
+                    rss (the feed - sends whole posts, not just the first lines)
   partials/         head, header (nav), authorship (sticker), disclaimer, pager
   index.html        the homepage
   index.json        builds the search index (auto - don't edit)
+  404.html          the "that page is not here" page (Caddy serves it, see below)
 static/
   css/style.css     the one stylesheet (colours + fonts at the top)
   favicon.svg       the tab icon

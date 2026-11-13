@@ -14,6 +14,11 @@
   {{ end }}
   {{ .Content }}
   <div class="post-foot">
+    {{/* A quiet pointer to the next post in this section, in the order the section
+         page lists them. The last post in a section gets nothing. */}}
+    {{ if $showSection }}{{ with .PrevInSection }}
+    <nav class="post-next" aria-label="Next post">Next in {{ $.CurrentSection.Title }}: <a href="{{ .RelPermalink }}">{{ .Title }}</a></nav>
+    {{ end }}{{ end }}
     {{ if not .Date.IsZero }}<time>{{ .Date.Format "Jan 2, 2006" }}</time>{{ end }}
     {{ partial "disclaimer.html" . }}
   </div>

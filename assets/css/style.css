@@ -10,7 +10,7 @@
   --bg:          #0c1317;   /* deep blue-teal, like the talk slides */
   --text:        #e7eff0;   /* soft off-white */
   --muted:       #93a7ab;   /* dates, labels */
-  --faint:       #6a7d81;   /* very quiet */
+  --faint:       #75898d;   /* very quiet, but still 4.5:1 on both page backgrounds */
   --line:        #22333a;   /* hairline */
   --line-soft:   #1a272d;
   --link:        #38cfc6;   /* bright teal accent */
@@ -94,6 +94,7 @@ a { color: var(--link); }
   margin: 0 0 0.7rem;
 }
 .hero p { color: var(--muted); margin: 0; }
+.hero p + p { margin-top: 0.8rem; }   /* only the 404 page has two */
 .privacy-note {
   font-family: var(--mono);
   margin-top: 1.5rem !important;
@@ -108,8 +109,9 @@ a { color: var(--link); }
   font-size: 0.76rem;
   color: var(--faint);
 }
-/* The quiet foot of a post: faint date sitting just above the receipt. */
+/* The quiet foot of a post: next-post pointer, faint date, then the receipt. */
 .post-foot { margin-top: 2.5rem; }
+.post-foot .post-next { font-family: var(--mono); font-size: 0.85rem; color: var(--muted); margin-bottom: 1.5rem; }
 .post-foot time { display: block; font-family: var(--mono); font-size: 0.76rem; color: var(--faint); }
 .post-foot .post-disclaimer { margin-top: 0.5rem; }
 

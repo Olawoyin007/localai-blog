@@ -1,4 +1,4 @@
-{{/* The homepage: a short intro, then the newest posts (4 per page), then the pager. */}}
+{{/* The homepage: a short intro, then the posts in reading-path order (as many per page as `pagerSize` in hugo.toml), then the pager. */}}
 {{ define "main" }}
 <section class="hero">
   {{ .Content }}
