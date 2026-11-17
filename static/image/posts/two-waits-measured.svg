@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 262" role="img"
+     aria-label="The same model answering the same question with more and more pasted text in front of it. With just the question, the pause before the first word is 0.03 seconds and it types at 53 tokens per second. With about a thousand words pasted, 0.38 seconds and 52. With four thousand, 1.6 seconds and 46. With sixteen thousand, 7.9 seconds and 34.">
+  <style>
+    .l   { font: 12px ui-monospace, Menlo, Consolas, monospace; fill: #93a7ab; }
+    .n   { font: 11px ui-monospace, Menlo, Consolas, monospace; fill: #75898d; }
+    .v   { font: 12px ui-monospace, Menlo, Consolas, monospace; fill: #e7eff0; }
+    .t   { font: 12px ui-monospace, Menlo, Consolas, monospace; fill: #93a7ab; text-anchor: end; }
+    .hd  { font: 11px system-ui, sans-serif; fill: #75898d; }
+    .b   { fill: #38cfc6; }
+    .cap { font: 11px system-ui, sans-serif; fill: #75898d; }
+  </style>
+  <text class="hd" x="0"   y="22">pasted in front</text>
+  <text class="hd" x="160" y="22">the pause (reading)</text>
+  <text class="hd" x="640" y="22" text-anchor="end">the typing (writing)</text>
+
+  <text class="l" x="0"   y="66">just the question</text>
+  <text class="n" x="0"   y="80">47 tokens</text>
+  <rect class="b" x="160" y="52" width="2" height="20" rx="2"/>
+  <text class="v" x="170" y="67">0.03 s</text>
+  <text class="t" x="640" y="67">53 tok/s</text>
+  <text class="l" x="0"   y="106">~1,000 words</text>
+  <text class="n" x="0"   y="120">1,378</text>
+  <rect class="b" x="160" y="92" width="14" height="20" rx="2"/>
+  <text class="v" x="182" y="107">0.38 s</text>
+  <text class="t" x="640" y="107">52 tok/s</text>
+  <text class="l" x="0"   y="146">~4,000 words</text>
+  <text class="n" x="0"   y="160">5,618</text>
+  <rect class="b" x="160" y="132" width="61" height="20" rx="2"/>
+  <text class="v" x="229" y="147">1.6 s</text>
+  <text class="t" x="640" y="147">46 tok/s</text>
+  <text class="l" x="0"   y="186">~16,000 words</text>
+  <text class="n" x="0"   y="200">21,362</text>
+  <rect class="b" x="160" y="172" width="300" height="20" rx="2"/>
+  <text class="v" x="468" y="187">7.9 s</text>
+  <text class="t" x="640" y="187">34 tok/s</text>
+
+  <text class="cap" x="0" y="230">hermes3:8b, same question every time. The pause grows about 250 times.</text>
+  <text class="cap" x="0" y="248">The typing slows by about a third, because every word now rereads the cache.</text>
+</svg>
