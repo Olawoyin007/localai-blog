@@ -19,7 +19,7 @@
     {{ if $showSection }}{{ with .PrevInSection }}
     <nav class="post-next" aria-label="Next post">Next in {{ $.CurrentSection.Title }}: <a href="{{ .RelPermalink }}">{{ .Title }}</a></nav>
     {{ end }}{{ end }}
-    {{ if not .Date.IsZero }}<time>{{ .Date.Format "Jan 2, 2006" }}</time>{{ end }}
+    {{ if not .Date.IsZero }}<span class="post-date">{{ partial "dates.html" . }}</span>{{ end }}
     {{ partial "disclaimer.html" . }}
   </div>
 </article>

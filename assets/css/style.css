@@ -112,7 +112,7 @@ a { color: var(--link); }
 /* The quiet foot of a post: next-post pointer, faint date, then the receipt. */
 .post-foot { margin-top: 2.5rem; }
 .post-foot .post-next { font-family: var(--mono); font-size: 0.85rem; color: var(--muted); margin-bottom: 1.5rem; }
-.post-foot time { display: block; font-family: var(--mono); font-size: 0.76rem; color: var(--faint); }
+.post-foot .post-date { display: block; font-family: var(--mono); font-size: 0.76rem; color: var(--faint); }
 .post-foot .post-disclaimer { margin-top: 0.5rem; }
 
 /* Organic posts get a kinder, dark olive-green wash over the whole page. */

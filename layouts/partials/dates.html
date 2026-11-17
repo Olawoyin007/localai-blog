@@ -1,0 +1,6 @@
+{{/* "Posted Jul 12, 2026", plus " · updated Nov 20, 2026" only when the post has a
+     hand-set `lastmod` later than its date. Typo fixes get no lastmod, so they never show. */}}
+{{- $posted := .Date.Format "2006-01-02" -}}
+{{- $updated := .Lastmod.Format "2006-01-02" -}}
+<time datetime="{{ $posted }}">Posted {{ .Date.Format "Jan 2, 2006" }}</time>
+{{- if gt $updated $posted }} · <time datetime="{{ $updated }}">updated {{ .Lastmod.Format "Jan 2, 2006" }}</time>{{ end -}}

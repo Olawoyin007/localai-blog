@@ -1,0 +1,20 @@
+{{/* Every post, most recently posted or updated first. The homepage keeps the reading order. */}}
+{{ define "main" }}
+<section class="hero">
+  <h1>{{ .Title }}</h1>
+  <p>Everything on the site, the most recently posted or updated at the top.</p>
+</section>
+<section class="post-list">
+  {{ $posts := where .Site.RegularPages "Type" "in" (slice "beginner" "advanced" "wellbeing") }}
+  {{ range $posts.ByLastmod.Reverse }}
+  <article class="post-card">
+    <a href="{{ .RelPermalink }}"><h2>{{ .Title }}</h2></a>
+    <div class="meta">
+      <span class="section">{{ .CurrentSection.Title }}</span>
+      {{ partial "authorship.html" . }}
+      <span>{{ partial "dates.html" . }}</span>
+    </div>
+  </article>
+  {{ end }}
+</section>
+{{ end }}
