@@ -2,9 +2,7 @@
 {{ define "main" }}
 <section class="hero">
   {{ .Content }}
-  {{/* The newest post's date, so a visitor can tell the site is still alive (the list below is in reading order, not by date). */}}
-  {{ $latest := index (where .Site.RegularPages.ByDate.Reverse "Type" "in" (slice "beginner" "advanced" "wellbeing")) 0 }}
-  <p class="privacy-note">No trackers, no cookies here. Last post <time datetime="{{ $latest.Date.Format "2006-01-02" }}">{{ $latest.Date.Format "Jan 2, 2006" }}</time>.</p>
+  <p class="privacy-note">No trackers, no cookies here.</p>
 </section>
 
 <section class="post-list">
