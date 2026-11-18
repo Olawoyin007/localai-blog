@@ -5,7 +5,7 @@
     .labd { font: 12px ui-monospace, Menlo, Consolas, monospace; fill: #0c1317; }
     .mut  { font: 11px system-ui, sans-serif; fill: #93a7ab; }
     .warn { font: 11px system-ui, sans-serif; fill: #c98a3f; }
-    .cap  { font: 11px system-ui, sans-serif; fill: #6a7d81; }
+    .cap  { font: 11px system-ui, sans-serif; fill: #75898d; }
     .w    { fill: #44595e; }
     .c    { fill: #38cfc6; }
     .x    { fill: #7fe4dd; }

@@ -9,7 +9,7 @@
     .tds { font: 10px ui-monospace, Menlo, Consolas, monospace; fill: #0c1317; }
     .hd  { font: 12px system-ui, sans-serif; fill: #38cfc6; }
     .ar  { stroke: #44595e; stroke-width: 1.5; fill: none; }
-    .cap { font: 11px system-ui, sans-serif; fill: #6a7d81; }
+    .cap { font: 11px system-ui, sans-serif; fill: #75898d; }
   </style>
 
   <rect class="out" x="20" y="42" width="600" height="212" rx="6"/>

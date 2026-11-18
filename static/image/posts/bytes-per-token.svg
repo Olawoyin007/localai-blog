@@ -4,7 +4,7 @@
     .lbl  { font: 13px ui-monospace, Menlo, Consolas, monospace; fill: #e7eff0; }
     .unit { font: 12px ui-monospace, Menlo, Consolas, monospace; fill: #93a7ab; }
     .spd  { font: 13px ui-monospace, Menlo, Consolas, monospace; fill: #7fe4dd; }
-    .cap  { font: 11px system-ui, sans-serif; fill: #6a7d81; }
+    .cap  { font: 11px system-ui, sans-serif; fill: #75898d; }
     .bar  { fill: #38cfc6; }
     .axis { stroke: #22333a; stroke-width: 1; }
   </style>

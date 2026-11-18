@@ -5,7 +5,7 @@
     .name { font: 13px ui-monospace, Menlo, Consolas, monospace; fill: #e7eff0; text-anchor: middle; }
     .sub  { font: 11px system-ui, sans-serif; fill: #93a7ab; text-anchor: middle; }
     .key  { font: 11px system-ui, sans-serif; fill: #93a7ab; }
-    .cap  { font: 11px system-ui, sans-serif; fill: #6a7d81; }
+    .cap  { font: 11px system-ui, sans-serif; fill: #75898d; }
     .full { fill: #44595e; }
     .quad { fill: #38cfc6; }
     .base { stroke: #22333a; stroke-width: 1; }

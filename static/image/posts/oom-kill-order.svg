@@ -8,9 +8,9 @@
     .scA  { font: 12px ui-monospace, Menlo, Consolas, monospace; fill: #0c1317; text-anchor: end; }
     .box  { fill: none; stroke: #22333a; stroke-width: 1; }
     .hot  { fill: #38cfc6; }
-    .ord  { font: 10px system-ui, sans-serif; fill: #6a7d81; text-anchor: middle; }
+    .ord  { font: 10px system-ui, sans-serif; fill: #75898d; text-anchor: middle; }
     .arw  { stroke: #44595e; stroke-width: 1.5; fill: none; }
-    .cap  { font: 11px system-ui, sans-serif; fill: #6a7d81; }
+    .cap  { font: 11px system-ui, sans-serif; fill: #75898d; }
   </style>
 
   <text class="ord" x="14" y="76" transform="rotate(-90 14 76)">first</text>

@@ -4,8 +4,8 @@
     .nm  { font: 12px ui-monospace, Menlo, Consolas, monospace; fill: #e7eff0; }
     .sz  { font: 10px ui-monospace, Menlo, Consolas, monospace; fill: #93a7ab; }
     .cons{ font: 11px system-ui, sans-serif; fill: #c98a3f; text-anchor: end; }
-    .hd  { font: 11px system-ui, sans-serif; fill: #6a7d81; }
-    .cap { font: 11px system-ui, sans-serif; fill: #6a7d81; }
+    .hd  { font: 11px system-ui, sans-serif; fill: #75898d; }
+    .cap { font: 11px system-ui, sans-serif; fill: #75898d; }
     .fits{ fill: #38cfc6; }
     .nope{ fill: #2b3a3f; }
     .edge{ fill: none; stroke: #38cfc6; stroke-width: 1.5; }
@@ -26,7 +26,7 @@
 
   <text class="nm" x="0" y="162">+ graphics card</text>
   <rect class="nope" x="130" y="148" width="150" height="22" rx="2"/>
-  <text class="sz"   x="138" y="164" fill="#6a7d81">machine memory, unusable</text>
+  <text class="sz"   x="138" y="164" fill="#75898d">machine memory, unusable</text>
   <rect class="edge" x="292" y="148" width="58" height="22" rx="2"/>
   <text class="sz"   x="356" y="164">12 GB card</text>
   <text class="cons" x="640" y="164">a polite error</text>

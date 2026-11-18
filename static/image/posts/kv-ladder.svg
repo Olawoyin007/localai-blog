@@ -3,10 +3,10 @@
   <style>
     .l   { font: 12px ui-monospace, Menlo, Consolas, monospace; fill: #93a7ab; }
     .v   { font: 12px ui-monospace, Menlo, Consolas, monospace; fill: #e7eff0; }
-    .t   { font: 11px ui-monospace, Menlo, Consolas, monospace; fill: #6a7d81; text-anchor: end; }
-    .hd  { font: 11px system-ui, sans-serif; fill: #6a7d81; }
+    .t   { font: 11px ui-monospace, Menlo, Consolas, monospace; fill: #75898d; text-anchor: end; }
+    .hd  { font: 11px system-ui, sans-serif; fill: #75898d; }
     .b   { fill: #38cfc6; }
-    .cap { font: 11px system-ui, sans-serif; fill: #6a7d81; }
+    .cap { font: 11px system-ui, sans-serif; fill: #75898d; }
   </style>
   <text class="hd" x="188" y="22">memory held</text>
   <text class="hd" x="640" y="22" text-anchor="end">throughput</text>
